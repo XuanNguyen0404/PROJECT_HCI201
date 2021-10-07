@@ -15,6 +15,8 @@
         android:theme="@style/Theme.Football_Field_Booking">
         <activity
             android:name=".PromotionActivity"
+            android:exported="true" />
+        <activity
             android:name=".ProfileEditByAdminActivity"
             android:exported="true" />
         <activity
