@@ -6,11 +6,14 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 public class PromotionActivity extends AppCompatActivity {
 
     private TextView textIgnore1;
     private TextView textIgnore2;
     private TextView textIgnore3;
+    private MaterialToolbar topAppBar;
 
 
     @Override
@@ -25,6 +28,10 @@ public class PromotionActivity extends AppCompatActivity {
         textIgnore1.setPaintFlags(textIgnore1.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         textIgnore2.setPaintFlags(textIgnore2.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         textIgnore3.setPaintFlags(textIgnore3.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
+        topAppBar=findViewById(R.id.topAppBar);
+        topAppBar.setTitle("Promotion");
+
 
     }
 }
