@@ -6,6 +6,7 @@
     <string name="user_share_pref">userSharePref</string>
     <string name="value_any_city">Anywhere</string>
     <string name="header_filters">Filter</string>
+    <string name="all_football_field">All Football Field</string>
 
     <string-array name="cities">
         <item>@string/value_any_city</item>
