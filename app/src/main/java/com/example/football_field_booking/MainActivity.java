@@ -2,6 +2,7 @@ package com.example.football_field_booking;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.football_field_booking.daos.UserDAO;
@@ -32,13 +34,16 @@ public class MainActivity extends AppCompatActivity {
 
     private Validation validation = new Validation();
 
+    private FilterDialogFragment mFilterDialog;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        updateUI(user);
+//        updateUI(user);
 
         topAppBar = findViewById(R.id.topAppBar);
         topAppBar.setTitleTextAppearance(this, R.style.FontLogo);
@@ -84,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void updateUI(FirebaseUser user) {
         if (user != null) {
             SharedPreferences userSPREF = getSharedPreferences(
@@ -108,5 +114,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 
 }

@@ -44,12 +44,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="70dp"
                 android:orientation="vertical">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
                     android:layout_margin="5dp"
                     android:layout_marginBottom="10dp"
+                    android:background="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="10dp">
 
@@ -57,6 +58,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -73,16 +75,15 @@
                                 android:text="View More >>"
                                 android:textColor="#5382AE"
                                 android:textSize="16dp"
-                                android:textStyle="bold">
-                            </TextView>
+                                android:textStyle="bold" />
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/cvImage1"
                                 android:layout_width="120dp"
                                 android:layout_height="100dp"
+                                android:layout_alignParentBottom="true"
                                 android:layout_margin="10dp"
-                                app:cardCornerRadius="20dp"
-                                android:layout_alignParentBottom="true">
+                                app:cardCornerRadius="20dp">
 
                                 <ImageView
                                     android:layout_width="match_parent"
@@ -95,63 +96,58 @@
                                 android:id="@+id/tvFieldName1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:layout_alignTop="@id/cvImage1"
                                 android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
                                 android:layout_marginBottom="20dp"
                                 android:layout_toRightOf="@id/cvImage1"
-                                android:layout_alignTop="@id/cvImage1"
                                 android:fontFamily="Roboto"
                                 android:text="Duy Hoang Field"
                                 android:textColor="#000000"
                                 android:textSize="18dp"
-                                android:textStyle="bold">
-                            </TextView>
+                                android:textStyle="bold" />
 
                             <ImageView
                                 android:id="@+id/ivLocation"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_toRightOf="@id/cvImage1"
                                 android:layout_below="@id/tvFieldName1"
-                                android:src="@drawable/outline_location_on_24">
-                            </ImageView>
+                                android:layout_toEndOf="@id/cvImage1"
+                                android:src="@drawable/outline_location_on_24"/>
 
                             <TextView
                                 android:id="@+id/tvAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_toRightOf="@id/ivLocation"
                                 android:layout_below="@id/tvFieldName1"
+                                android:layout_toRightOf="@id/ivLocation"
                                 android:fontFamily="Roboto"
                                 android:text="Bình Thanh Dist,\nHCMC"
                                 android:textColor="#000000"
-                                android:textSize="18dp">
-                            </TextView>
+                                android:textSize="18dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tvDistance1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_below="@id/tvViewMore1"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginRight="10dp"
-                                android:paddingTop="5dp"
-                                android:paddingBottom="5dp"
-                                android:paddingLeft="15dp"
-                                android:paddingRight="15dp"
-                                android:layout_below="@id/tvViewMore1"
-                                android:fontFamily="Roboto"
-                                android:text="2 km"
                                 android:background="@drawable/rounded_corner_with_border"
+                                android:fontFamily="Roboto"
+                                android:padding="3dp"
+                                android:text="2 km"
                                 android:textColor="#ffffff"
-                                android:textSize="18dp">
-                            </TextView>
+                                android:textSize="16dp" />
 
                         </RelativeLayout>
 
                         <HorizontalScrollView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center">
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -184,9 +180,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField1"
                                         android:layout_marginLeft="9dp"
-                                        android:textColor="#000000"
                                         android:gravity="left"
                                         android:text="Field A"
+                                        android:textColor="#000000"
                                         android:textSize="18dp"
                                         android:textStyle="bold"></TextView>
 
@@ -194,22 +190,21 @@
                                         android:id="@+id/ivStarIcon1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/star"
                                         android:layout_below="@+id/cvSmallField1"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName1"
+                                        android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginLeft="90dp">
-                                    </ImageView>
+                                        android:layout_toRightOf="@+id/tvSmallFieldName1"
+                                        android:src="@drawable/star"></ImageView>
 
                                     <TextView
                                         android:id="@+id/tvRate1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField1"
-                                        android:layout_toRightOf="@+id/ivStarIcon1"
                                         android:layout_marginLeft="5dp"
-                                        android:textColor="#000000"
+                                        android:layout_toRightOf="@+id/ivStarIcon1"
                                         android:text="4.5"
+                                        android:textColor="#000000"
                                         android:textSize="14dp"
                                         android:textStyle="bold"></TextView>
 
@@ -252,9 +247,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/ivMultiple1"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore1"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvPriceIgnore1"
                                         android:text="$4 - $5.6/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
@@ -267,8 +262,8 @@
                                         android:layout_below="@+id/tvPriceIgnore1"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentEnd="true"
-                                        android:layout_marginTop="5dp"
                                         android:layout_marginStart="10dp"
+                                        android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
                                         android:background="#000000"></View>
 
@@ -289,9 +284,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/vdHorizontal1"
-                                        android:layout_toRightOf="@+id/tvDiscount1"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvDiscount1"
                                         android:text="Slots available: 2"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
@@ -303,8 +298,7 @@
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999">
-                                </View>
+                                    android:background="#999999"></View>
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -314,9 +308,9 @@
                                         android:id="@+id/cvSmallField2"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
+                                        android:layout_alignParentRight="true"
                                         android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp"
-                                        android:layout_alignParentRight="true">
+                                        app:cardCornerRadius="20dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
@@ -332,9 +326,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField2"
                                         android:layout_marginLeft="9dp"
-                                        android:textColor="#000000"
                                         android:gravity="left"
                                         android:text="Field B"
+                                        android:textColor="#000000"
                                         android:textSize="18dp"
                                         android:textStyle="bold"></TextView>
 
@@ -342,22 +336,21 @@
                                         android:id="@+id/ivStarIcon2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/star"
                                         android:layout_below="@+id/cvSmallField2"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName2"
+                                        android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginLeft="90dp">
-                                    </ImageView>
+                                        android:layout_toRightOf="@+id/tvSmallFieldName2"
+                                        android:src="@drawable/star"></ImageView>
 
                                     <TextView
                                         android:id="@+id/tvRate2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField2"
-                                        android:layout_toRightOf="@+id/ivStarIcon2"
                                         android:layout_marginLeft="5dp"
-                                        android:textColor="#000000"
+                                        android:layout_toRightOf="@+id/ivStarIcon2"
                                         android:text="4.5"
+                                        android:textColor="#000000"
                                         android:textSize="14dp"
                                         android:textStyle="bold"></TextView>
 
@@ -400,9 +393,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/ivMultiple2"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore2"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvPriceIgnore2"
                                         android:text="$5.4 - $7.2/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
@@ -415,8 +408,8 @@
                                         android:layout_below="@+id/tvPriceIgnore2"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentEnd="true"
-                                        android:layout_marginTop="5dp"
                                         android:layout_marginStart="10dp"
+                                        android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
                                         android:background="#000000"></View>
 
@@ -437,9 +430,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/vdHorizontal2"
-                                        android:layout_toRightOf="@+id/tvDiscount2"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvDiscount2"
                                         android:text="Slots available: 1"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
@@ -450,8 +443,7 @@
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999">
-                                </View>
+                                    android:background="#999999"></View>
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -480,9 +472,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField3"
                                         android:layout_marginLeft="9dp"
-                                        android:textColor="#000000"
                                         android:gravity="left"
                                         android:text="Field C"
+                                        android:textColor="#000000"
                                         android:textSize="18dp"
                                         android:textStyle="bold"></TextView>
 
@@ -490,22 +482,21 @@
                                         android:id="@+id/ivStarIcon3"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/star"
                                         android:layout_below="@+id/cvSmallField3"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName3"
+                                        android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginLeft="90dp">
-                                    </ImageView>
+                                        android:layout_toRightOf="@+id/tvSmallFieldName3"
+                                        android:src="@drawable/star"></ImageView>
 
                                     <TextView
                                         android:id="@+id/tvRate3"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField3"
-                                        android:layout_toRightOf="@+id/ivStarIcon3"
                                         android:layout_marginLeft="5dp"
-                                        android:textColor="#000000"
+                                        android:layout_toRightOf="@+id/ivStarIcon3"
                                         android:text="4"
+                                        android:textColor="#000000"
                                         android:textSize="14dp"
                                         android:textStyle="bold"></TextView>
 
@@ -548,9 +539,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/ivMultiple3"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore3"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvPriceIgnore3"
                                         android:text="$4 - $5.6/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
@@ -563,8 +554,8 @@
                                         android:layout_below="@+id/tvPriceIgnore3"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentEnd="true"
-                                        android:layout_marginTop="5dp"
                                         android:layout_marginStart="10dp"
+                                        android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
                                         android:background="#000000"></View>
 
@@ -585,9 +576,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/vdHorizontal3"
-                                        android:layout_toRightOf="@+id/tvDiscount3"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvDiscount3"
                                         android:text="Slots available: 3"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
@@ -604,9 +595,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
                     android:layout_margin="5dp"
                     android:layout_marginBottom="10dp"
+                    android:background="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="10dp">
 
@@ -614,6 +605,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -630,16 +622,15 @@
                                 android:text="View More >>"
                                 android:textColor="#5382AE"
                                 android:textSize="16dp"
-                                android:textStyle="bold">
-                            </TextView>
+                                android:textStyle="bold"></TextView>
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/cvImage2"
                                 android:layout_width="120dp"
                                 android:layout_height="100dp"
+                                android:layout_alignParentBottom="true"
                                 android:layout_margin="10dp"
-                                app:cardCornerRadius="20dp"
-                                android:layout_alignParentBottom="true">
+                                app:cardCornerRadius="20dp">
 
                                 <ImageView
                                     android:layout_width="match_parent"
@@ -652,56 +643,52 @@
                                 android:id="@+id/tvFieldName2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:layout_alignTop="@id/cvImage2"
                                 android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
                                 android:layout_marginBottom="20dp"
                                 android:layout_toRightOf="@id/cvImage2"
-                                android:layout_alignTop="@id/cvImage2"
                                 android:fontFamily="Roboto"
                                 android:text="Anh Thy Field"
                                 android:textColor="#000000"
                                 android:textSize="18dp"
-                                android:textStyle="bold">
-                            </TextView>
+                                android:textStyle="bold"></TextView>
 
                             <ImageView
                                 android:id="@+id/ivLocation2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_toRightOf="@id/cvImage2"
                                 android:layout_below="@id/tvFieldName2"
-                                android:src="@drawable/outline_location_on_24">
-                            </ImageView>
+                                android:layout_toRightOf="@id/cvImage2"
+                                android:src="@drawable/outline_location_on_24"></ImageView>
 
                             <TextView
                                 android:id="@+id/tvAddress2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_toRightOf="@id/ivLocation2"
                                 android:layout_below="@id/tvFieldName2"
+                                android:layout_toRightOf="@id/ivLocation2"
                                 android:fontFamily="Roboto"
                                 android:text="Thu Duc city,\nHCMC"
                                 android:textColor="#000000"
-                                android:textSize="18dp">
-                            </TextView>
+                                android:textSize="18dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tvDistance2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_below="@id/tvViewMore2"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginRight="10dp"
-                                android:paddingTop="5dp"
-                                android:paddingBottom="5dp"
-                                android:paddingLeft="15dp"
-                                android:paddingRight="15dp"
-                                android:layout_below="@id/tvViewMore2"
-                                android:fontFamily="Roboto"
-                                android:text="3.5 km"
                                 android:background="@drawable/rounded_corner_with_border"
+                                android:fontFamily="Roboto"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp"
+                                android:text="3.5 km"
                                 android:textColor="#ffffff"
-                                android:textSize="18dp">
-                            </TextView>
+                                android:textSize="18dp"></TextView>
 
                         </RelativeLayout>
 
@@ -709,6 +696,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -741,9 +729,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField4"
                                         android:layout_marginLeft="9dp"
-                                        android:textColor="#000000"
                                         android:gravity="left"
                                         android:text="Field 1"
+                                        android:textColor="#000000"
                                         android:textSize="18dp"
                                         android:textStyle="bold"></TextView>
 
@@ -751,22 +739,21 @@
                                         android:id="@+id/ivStarIcon4"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/star"
                                         android:layout_below="@+id/cvSmallField4"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName4"
+                                        android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginLeft="90dp">
-                                    </ImageView>
+                                        android:layout_toRightOf="@+id/tvSmallFieldName4"
+                                        android:src="@drawable/star"></ImageView>
 
                                     <TextView
                                         android:id="@+id/tvRate4"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField4"
-                                        android:layout_toRightOf="@+id/ivStarIcon4"
                                         android:layout_marginLeft="5dp"
-                                        android:textColor="#000000"
+                                        android:layout_toRightOf="@+id/ivStarIcon4"
                                         android:text="5"
+                                        android:textColor="#000000"
                                         android:textSize="14dp"
                                         android:textStyle="bold"></TextView>
 
@@ -809,9 +796,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/ivMultiple4"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore4"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvPriceIgnore4"
                                         android:text="$4.8 - $6.4/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
@@ -824,8 +811,8 @@
                                         android:layout_below="@+id/tvPriceIgnore4"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentEnd="true"
-                                        android:layout_marginTop="5dp"
                                         android:layout_marginStart="10dp"
+                                        android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
                                         android:background="#000000"></View>
 
@@ -846,9 +833,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/vdHorizontal4"
-                                        android:layout_toRightOf="@+id/tvDiscount4"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvDiscount4"
                                         android:text="Slots available: 1"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
@@ -859,8 +846,7 @@
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999">
-                                </View>
+                                    android:background="#999999"></View>
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -870,9 +856,9 @@
                                         android:id="@+id/cvSmallField5"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
+                                        android:layout_alignParentRight="true"
                                         android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp"
-                                        android:layout_alignParentRight="true">
+                                        app:cardCornerRadius="20dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
@@ -888,9 +874,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField5"
                                         android:layout_marginLeft="9dp"
-                                        android:textColor="#000000"
                                         android:gravity="left"
                                         android:text="Field 2"
+                                        android:textColor="#000000"
                                         android:textSize="18dp"
                                         android:textStyle="bold"></TextView>
 
@@ -898,22 +884,21 @@
                                         android:id="@+id/ivStarIcon5"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/star"
                                         android:layout_below="@+id/cvSmallField5"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName5"
+                                        android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginLeft="90dp">
-                                    </ImageView>
+                                        android:layout_toRightOf="@+id/tvSmallFieldName5"
+                                        android:src="@drawable/star"></ImageView>
 
                                     <TextView
                                         android:id="@+id/tvRate5"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField5"
-                                        android:layout_toRightOf="@+id/ivStarIcon5"
                                         android:layout_marginLeft="5dp"
-                                        android:textColor="#000000"
+                                        android:layout_toRightOf="@+id/ivStarIcon5"
                                         android:text="4.5"
+                                        android:textColor="#000000"
                                         android:textSize="14dp"
                                         android:textStyle="bold"></TextView>
 
@@ -956,9 +941,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/ivMultiple5"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore5"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvPriceIgnore5"
                                         android:text="$4.5 - $6.3/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
@@ -971,8 +956,8 @@
                                         android:layout_below="@+id/tvPriceIgnore5"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentEnd="true"
-                                        android:layout_marginTop="5dp"
                                         android:layout_marginStart="10dp"
+                                        android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
                                         android:background="#000000"></View>
 
@@ -993,9 +978,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/vdHorizontal5"
-                                        android:layout_toRightOf="@+id/tvDiscount5"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvDiscount5"
                                         android:text="Slots available: 2"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
@@ -1006,8 +991,7 @@
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999">
-                                </View>
+                                    android:background="#999999"></View>
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -1036,9 +1020,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField6"
                                         android:layout_marginLeft="9dp"
-                                        android:textColor="#000000"
                                         android:gravity="left"
                                         android:text="Field 3"
+                                        android:textColor="#000000"
                                         android:textSize="18dp"
                                         android:textStyle="bold"></TextView>
 
@@ -1046,22 +1030,21 @@
                                         android:id="@+id/ivStarIcon6"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/star"
                                         android:layout_below="@+id/cvSmallField6"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName6"
+                                        android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginLeft="90dp">
-                                    </ImageView>
+                                        android:layout_toRightOf="@+id/tvSmallFieldName6"
+                                        android:src="@drawable/star"></ImageView>
 
                                     <TextView
                                         android:id="@+id/tvRate6"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/cvSmallField6"
-                                        android:layout_toRightOf="@+id/ivStarIcon6"
                                         android:layout_marginLeft="5dp"
-                                        android:textColor="#000000"
+                                        android:layout_toRightOf="@+id/ivStarIcon6"
                                         android:text="4"
+                                        android:textColor="#000000"
                                         android:textSize="14dp"
                                         android:textStyle="bold"></TextView>
 
@@ -1104,9 +1087,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/ivMultiple6"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore6"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvPriceIgnore6"
                                         android:text="$7.2 - $9/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
@@ -1119,8 +1102,8 @@
                                         android:layout_below="@+id/tvPriceIgnore6"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentEnd="true"
-                                        android:layout_marginTop="5dp"
                                         android:layout_marginStart="10dp"
+                                        android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
                                         android:background="#000000"></View>
 
@@ -1141,9 +1124,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_below="@+id/vdHorizontal6"
-                                        android:layout_toRightOf="@+id/tvDiscount6"
                                         android:layout_marginLeft="40dp"
                                         android:layout_marginTop="5dp"
+                                        android:layout_toRightOf="@+id/tvDiscount6"
                                         android:text="Slots available: 1"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
@@ -1158,22 +1141,9 @@
             </LinearLayout>
 
 
-
-
         </androidx.core.widget.NestedScrollView>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
