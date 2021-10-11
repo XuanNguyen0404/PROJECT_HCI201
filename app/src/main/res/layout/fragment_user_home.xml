@@ -202,7 +202,7 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:orientation="horizontal">
@@ -213,7 +213,7 @@
                         android:orientation="vertical">
 
                         <LinearLayout
-                            android:layout_width="390dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
 
@@ -290,10 +290,6 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <HorizontalScrollView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -307,7 +303,7 @@
                                         android:orientation="vertical">
 
                                         <androidx.cardview.widget.CardView
-                                            android:layout_width="195dp"
+                                            android:layout_width="185dp"
                                             android:layout_height="100dp"
                                             android:layout_margin="5dp"
                                             app:cardCornerRadius="10dp">
@@ -316,7 +312,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:scaleType="centerCrop"
-                                                android:src="@drawable/image_1" />
+                                                android:src="@drawable/field1" />
 
                                         </androidx.cardview.widget.CardView>
 
@@ -352,7 +348,7 @@
                                             android:layout_height="match_parent"
                                             android:layout_marginBottom="10dp"
                                             android:drawableLeft="@drawable/number_people"
-                                            android:text=" 5" />
+                                            android:text=" 7" />
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -361,11 +357,11 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/txt1"
+                                                android:id="@+id/textIgnore1"
                                                 style="@style/FontText"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:text="$5 - 7$/h"
+                                                android:text="$5 - $7/h"
                                                 android:textColor="@color/red"
                                                 android:textSize="12dp" />
 
@@ -374,7 +370,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginLeft="20dp"
-                                                android:text="$4 - 5.6$/h"
+                                                android:text="$4.5 - $5.9/h"
                                                 android:textColor="@color/black"
                                                 android:textSize="15dp" />
 
@@ -396,7 +392,7 @@
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:text="-20%"
+                                                android:text="-10%"
                                                 android:textColor="@color/red" />
 
                                             <TextView
@@ -418,10 +414,11 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
+                                        android:layout_marginLeft="5dp"
                                         android:orientation="vertical">
 
                                         <androidx.cardview.widget.CardView
-                                            android:layout_width="195dp"
+                                            android:layout_width="185dp"
                                             android:layout_height="100dp"
                                             android:layout_margin="5dp"
                                             app:cardCornerRadius="10dp">
@@ -430,7 +427,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:scaleType="centerCrop"
-                                                android:src="@drawable/image_1" />
+                                                android:src="@drawable/field2" />
 
                                         </androidx.cardview.widget.CardView>
 
@@ -443,7 +440,7 @@
                                                 style="@style/FontText"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:text="Field A"
+                                                android:text="Field B"
                                                 android:textColor="@color/black"
                                                 android:textSize="18dp"
                                                 android:textStyle="bold" />
@@ -455,7 +452,7 @@
                                                 android:layout_marginRight="5dp"
                                                 android:drawableRight="@drawable/star"
                                                 android:gravity="right"
-                                                android:text="4.5 "
+                                                android:text="4.9 "
                                                 android:textColor="@color/black" />
 
                                         </LinearLayout>
@@ -475,11 +472,11 @@
                                             android:orientation="horizontal">
 
                                             <TextView
-                                                android:id="@+id/txt2"
+                                                android:id="@+id/textIgnore2"
                                                 style="@style/FontText"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-                                                android:text="$5 - 7$/h"
+                                                android:text="$5 - $7/h"
                                                 android:textColor="@color/red"
                                                 android:textSize="12dp" />
 
@@ -488,7 +485,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginLeft="20dp"
-                                                android:text="$4 - 5.6$/h"
+                                                android:text="$4 - $5.6/h"
                                                 android:textColor="@color/black"
                                                 android:textSize="15dp" />
 
@@ -518,129 +515,659 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginRight="5dp"
                                                 android:gravity="right"
-                                                android:text="Slot available: 2"
-                                                android:textColor="#45AB2B" />
-                                        </LinearLayout>
-                                    </LinearLayout>
-
-                                    <View
-                                        android:layout_width="1dp"
-                                        android:layout_height="match_parent"
-                                        android:background="@color/white_gray" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:orientation="vertical">
-
-                                        <androidx.cardview.widget.CardView
-                                            android:layout_width="195dp"
-                                            android:layout_height="100dp"
-                                            android:layout_margin="5dp"
-                                            app:cardCornerRadius="10dp">
-
-                                            <ImageView
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:scaleType="centerCrop"
-                                                android:src="@drawable/image_1" />
-
-                                        </androidx.cardview.widget.CardView>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                style="@style/FontText"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="Field A"
-                                                android:textColor="@color/black"
-                                                android:textSize="18dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                style="@style/FontText"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginRight="5dp"
-                                                android:drawableRight="@drawable/star"
-                                                android:gravity="right"
-                                                android:text="4.5 "
-                                                android:textColor="@color/black" />
-
-                                        </LinearLayout>
-
-                                        <TextView
-                                            style="@style/FontText"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:layout_marginBottom="10dp"
-                                            android:drawableLeft="@drawable/number_people"
-                                            android:text=" 5" />
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="10dp"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                android:id="@+id/txt3"
-                                                style="@style/FontText"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="$5 - 7$/h"
-                                                android:textColor="@color/red"
-                                                android:textSize="12dp" />
-
-                                            <TextView
-                                                style="@style/FontText"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="20dp"
-                                                android:text="$4 - 5.6$/h"
-                                                android:textColor="@color/black"
-                                                android:textSize="15dp" />
-
-                                        </LinearLayout>
-
-                                        <View
-                                            android:layout_width="match_parent"
-                                            android:layout_height="1dp"
-                                            android:layout_marginRight="5dp"
-                                            android:layout_marginBottom="10dp"
-                                            android:background="@color/white_gray" />
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="10dp"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="-20%"
-                                                android:textColor="@color/red" />
-
-                                            <TextView
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginRight="5dp"
-                                                android:gravity="right"
-                                                android:text="Slot available: 2"
+                                                android:text="Slot available: 4"
                                                 android:textColor="#45AB2B" />
                                         </LinearLayout>
                                     </LinearLayout>
 
                                 </LinearLayout>
-                            </HorizontalScrollView>
                         </LinearLayout>
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="5dp"
+                                app:cardCornerRadius="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/field4" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/FontText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:text="Tien Xuan field"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/FontText"
+                                    android:layout_width="115dp"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/outline_location_on_24"
+                                    android:text="108/5b Quan 1 HCM "
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="55dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_margin="5dp"
+                                    app:cardBackgroundColor="#DFA600"
+                                    app:cardCornerRadius="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:padding="2dp"
+                                        android:paddingLeft="100dp"
+                                        android:text="17 km"
+                                        android:textColor="@color/white" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="185dp"
+                                        android:layout_height="100dp"
+                                        android:layout_margin="5dp"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/field3" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Field C"
+                                            android:textColor="@color/black"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:drawableRight="@drawable/star"
+                                            android:gravity="right"
+                                            android:text="4.6 "
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        style="@style/FontText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="10dp"
+                                        android:drawableLeft="@drawable/number_people"
+                                        android:text=" 11" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textIgnore3"
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="$8 - $10/h"
+                                            android:textColor="@color/red"
+                                            android:textSize="12dp" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="$4 - $5/h"
+                                            android:textColor="@color/black"
+                                            android:textSize="15dp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@color/white_gray" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="-50%"
+                                            android:textColor="@color/red" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:gravity="right"
+                                            android:text="Slot available: 1"
+                                            android:textColor="#45AB2B" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white_gray" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="185dp"
+                                        android:layout_height="100dp"
+                                        android:layout_margin="5dp"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/field5" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Field E"
+                                            android:textColor="@color/black"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:drawableRight="@drawable/star"
+                                            android:gravity="right"
+                                            android:text="4.5 "
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        style="@style/FontText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="10dp"
+                                        android:drawableLeft="@drawable/number_people"
+                                        android:text=" 7" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textIgnore4"
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="$5 - $7/h"
+                                            android:textColor="@color/red"
+                                            android:textSize="12dp" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="$3.5 - $4.9/h"
+                                            android:textColor="@color/black"
+                                            android:textSize="15dp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@color/white_gray" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="-30%"
+                                            android:textColor="@color/red" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:gravity="right"
+                                            android:text="Slot available: 8"
+                                            android:textColor="#45AB2B" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="5dp"
+                                app:cardCornerRadius="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/field6" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/FontText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:text="Tan Nam field"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/FontText"
+                                    android:layout_width="115dp"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/outline_location_on_24"
+                                    android:text="89/9a Trung Mi Hoc Mon HCM "
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="55dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_margin="5dp"
+                                    app:cardBackgroundColor="#DFA600"
+                                    app:cardCornerRadius="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:padding="2dp"
+                                        android:paddingLeft="100dp"
+                                        android:text="3.9 km"
+                                        android:textColor="@color/white" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="185dp"
+                                        android:layout_height="100dp"
+                                        android:layout_margin="5dp"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/field7" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Field A"
+                                            android:textColor="@color/black"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:drawableRight="@drawable/star"
+                                            android:gravity="right"
+                                            android:text="4.0 "
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        style="@style/FontText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="10dp"
+                                        android:drawableLeft="@drawable/number_people"
+                                        android:text=" 5" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textIgnore5"
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="$4 - $8/h"
+                                            android:textColor="@color/red"
+                                            android:textSize="12dp" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="$3.6 - $7.2/h"
+                                            android:textColor="@color/black"
+                                            android:textSize="15dp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@color/white_gray" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="-10%"
+                                            android:textColor="@color/red" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:gravity="right"
+                                            android:text="Slot available: 5"
+                                            android:textColor="#45AB2B" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white_gray" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="185dp"
+                                        android:layout_height="100dp"
+                                        android:layout_margin="5dp"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/field8" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Field C"
+                                            android:textColor="@color/black"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:drawableRight="@drawable/star"
+                                            android:gravity="right"
+                                            android:text="4.1 "
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        style="@style/FontText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="10dp"
+                                        android:drawableLeft="@drawable/number_people"
+                                        android:text=" 5" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textIgnore6"
+                                            style="@style/FontText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="$5 - $7/h"
+                                            android:textColor="@color/red"
+                                            android:textSize="12dp" />
+
+                                        <TextView
+                                            style="@style/FontText"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="$4 - $5.6/h"
+                                            android:textColor="@color/black"
+                                            android:textSize="15dp" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@color/white_gray" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="-20%"
+                                            android:textColor="@color/red" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="5dp"
+                                            android:gravity="right"
+                                            android:text="Slot available: 7"
+                                            android:textColor="#45AB2B" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
@@ -722,22 +1249,24 @@
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Field Name"
+                            android:text="Bach Hoang Field"
                             android:textSize="17dp"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Price : 5$/h"
+                            android:text="Price : $5-$11/h"
                             android:textStyle="bold" />
 
                         <TextView
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="34/4e Tan Xuan Hoc Mon HCM "
+                            android:text="37/10e Nguyen Hue HCM "
+                            android:drawableLeft="@drawable/outline_location_on_24"
                             android:textStyle="bold" />
 
                         <TextView
@@ -758,7 +1287,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image_1" />
+                            android:src="@drawable/field8" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -772,28 +1301,30 @@
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Field Name"
+                            android:text="Truong Kha Field"
                             android:textSize="17dp"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Price : 5$/h"
+                            android:text="Price : $4-$9/h"
                             android:textStyle="bold" />
 
                         <TextView
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="34/4e Tan Xuan Hoc Mon HCM "
+                            android:text="19/4e Quan 11 HCM "
+                            android:drawableLeft="@drawable/outline_location_on_24"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="4.5"
+                            android:text="4.8"
                             app:drawableLeftCompat="@drawable/star" />
 
                     </LinearLayout>
@@ -808,7 +1339,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/image_1" />
+                            android:src="@drawable/field7" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -822,29 +1353,31 @@
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Field Name"
+                            android:text="Ba Trieu Field"
                             android:textSize="17dp"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Price : 5$/h"
+                            android:text="Price : $5-$6/h"
                             android:textStyle="bold" />
 
                         <TextView
                             style="@style/FontText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="34/4e Tan Xuan Hoc Mon HCM "
+                            android:text="78/9e Quan 12 HCM "
+                            android:drawableLeft="@drawable/outline_location_on_24"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawableLeft="@drawable/star"
-                            android:text="4.5" />
+                            android:text="4.7" />
 
                     </LinearLayout>
 
@@ -871,7 +1404,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="All football field"
+                android:text="Others"
                 android:textSize="22dp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -910,7 +1443,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/image_1" />
+                                android:src="@drawable/field6" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -924,7 +1457,67 @@
                                 style="@style/FontText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Field Name"
+                                android:text="Phuc Anh Field"
+                                android:textSize="17dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/FontText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price : %7-$8/h"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/FontText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="14/4e Quan 11 HCM "
+                                android:drawableLeft="@drawable/outline_location_on_24"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/star"
+                                android:text="4.4" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/field4" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/FontText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ngoc Duy Field"
+                                android:textColor="@color/black"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -932,7 +1525,7 @@
                                 style="@style/FontText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Price : 5$/h"
+                                android:text="Price : $5-$8/h"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -940,6 +1533,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="34/4e Tan Xuan Hoc Mon HCM "
+                                android:drawableLeft="@drawable/outline_location_on_24"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -967,7 +1561,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/image_1" />
+                                android:src="@drawable/field3" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -981,7 +1575,8 @@
                                 style="@style/FontText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Field Name"
+                                android:text="Ha Nam Field"
+                                android:textColor="@color/black"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -989,71 +1584,15 @@
                                 style="@style/FontText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Price : 5$/h"
+                                android:text="Price : $7-$9/h"
                                 android:textStyle="bold" />
 
                             <TextView
                                 style="@style/FontText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="34/4e Tan Xuan Hoc Mon HCM "
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:drawableLeft="@drawable/star"
-                                android:text="4.5" />
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="150dp"
-                            android:layout_height="120dp"
-                            android:layout_margin="5dp"
-                            app:cardCornerRadius="10dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/image_1" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="200dp"
-                            android:layout_height="120dp"
-                            android:layout_margin="5dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                style="@style/FontText"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Field Name"
-                                android:textSize="17dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                style="@style/FontText"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Price : 5$/h"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                style="@style/FontText"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="34/4e Tan Xuan Hoc Mon HCM "
+                                android:text="25/4a Quan 12 HCM "
+                                android:drawableLeft="@drawable/outline_location_on_24"
                                 android:textStyle="bold" />
 
                             <TextView
