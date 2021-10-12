@@ -15,6 +15,19 @@
         android:theme="@style/Theme.Football_Field_Booking">
         <activity
             android:name=".PromotionActivity"
+            android:name=".ProfileEditByAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OwnerHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".ProfileEditByAdminActivity"
