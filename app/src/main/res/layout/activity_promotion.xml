@@ -27,7 +27,7 @@
                 app:liftOnScroll="true"
                 app:logo="@drawable/logo"
                 app:menu="@menu/top_app_bar"
-                app:navigationIcon="@drawable/back"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
                 app:title="Promotion">
             </com.google.android.material.appbar.MaterialToolbar>
 
