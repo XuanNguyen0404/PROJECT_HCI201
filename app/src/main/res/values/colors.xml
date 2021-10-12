@@ -13,4 +13,5 @@
     <color name="gray">#EFF1FE</color>
     <color name="greySecondary">#8B000000</color>
     <color name="greyDisabled">#61000000</color>
+    <color name="blue">#0000FF</color>
 </resources>
