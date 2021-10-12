@@ -4,6 +4,100 @@
     <string name="default_web_client_id_bookingFF">253666236099-6hp907darl75h3l0rr8djjuodt9mn32b.apps.googleusercontent.com</string>
     <string name="something_went_wrong">Something went wrong</string>
     <string name="user_share_pref">userSharePref</string>
+    <string name="value_any_city">Anywhere</string>
+    <string name="header_filters">Filter</string>
+    <string name="all_football_field">All Football Field</string>
+
+    <string-array name="cities">
+        <item>@string/value_any_city</item>
+        <item>Albuquerque</item>
+        <item>Arlington</item>
+        <item>Atlanta</item>
+        <item>Austin</item>
+        <item>Baltimore</item>
+        <item>Boston</item>
+        <item>Charlotte</item>
+        <item>Chicago</item>
+        <item>Cleveland</item>
+        <item>Colorado Springs</item>
+        <item>Columbus</item>
+        <item>Dallas</item>
+        <item>Denver</item>
+        <item>Detroit</item>
+        <item>El Paso</item>
+        <item>Fort Worth</item>
+        <item>Fresno</item>
+        <item>Houston</item>
+        <item>Indianapolis</item>
+        <item>Jacksonville</item>
+        <item>Kansas City</item>
+        <item>Las Vagas</item>
+        <item>Long Beach</item>
+        <item>Los Angeles</item>
+        <item>Louisville</item>
+        <item>Memphis</item>
+        <item>Mesa</item>
+        <item>Miami</item>
+        <item>Milwaukee</item>
+        <item>Nashville</item>
+        <item>New York</item>
+        <item>Oakland</item>
+        <item>Oklahoma</item>
+        <item>Omaha</item>
+        <item>Philadelphia</item>
+        <item>Phoenix</item>
+        <item>Portland</item>
+        <item>Raleigh</item>
+        <item>Sacramento</item>
+        <item>San Antonio</item>
+        <item>San Diego</item>
+        <item>San Francisco</item>
+        <item>San Jose</item>
+        <item>Tucson</item>
+        <item>Tulsa</item>
+        <item>Virginia Beach</item>
+        <item>Washington</item>
+    </string-array>
+
+    <string name="value_any_category">All field</string>
+    <string-array name="categories">
+        <item>@string/value_any_category</item>
+
+        <item>5 people</item>
+        <item>7 people</item>
+        <item>11 people</item>
+        <item>Artificial</item>
+        <item>Real grass</item>
+
+    </string-array>
+
+
+    <string name="value_any_price">Any price</string>
+    <string name="price_1"> smaller 5$</string>
+    <string name="price_2"> eq 5$ and smaller 7$</string>
+    <string name="price_3"> eq 7$ and smaller 10$</string>
+    <string name="price_4"> bigger 10$</string>
+    <string-array name="prices">
+        <item>@string/value_any_price</item>
+        <item>@string/price_1</item>
+        <item>@string/price_2</item>
+        <item>@string/price_3</item>
+        <item>@string/price_4</item>
+    </string-array>
+
+    <string name="sort_by_rating">Sort by Rating</string>
+    <string name="sort_by_popularity">Sort by Popularity</string>
+    <string name="sort_by_price">Sort by Price</string>
+
+    <string-array name="sort_by">
+        <item>@string/sort_by_rating</item>
+        <item>@string/sort_by_popularity</item>
+        <item>@string/sort_by_price</item>
+    </string-array>
+
+    <string name="sorted_by_rating">sorted by rating</string>
+    <string name="sorted_by_price">sorted by price</string>
+    <string name="sorted_by_popularity">sorted by popularity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="back"><![CDATA[<]]></string>
     <string name="forward"><![CDATA[>]]></string>
