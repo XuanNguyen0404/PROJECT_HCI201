@@ -27,12 +27,11 @@
                 app:liftOnScroll="true"
                 app:logo="@drawable/logo"
                 app:menu="@menu/top_app_bar"
+                app:navigationIcon="@drawable/back"
                 app:title="Promotion">
-
             </com.google.android.material.appbar.MaterialToolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
-
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,7 +41,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="70dp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -58,24 +56,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+                      
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="View more >>"
+                                android:textColor="#5382AE"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center">
-
-                            <TextView
-                                android:id="@+id/tvViewMore1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="Roboto"
-                                android:text="View More >>"
-                                android:textColor="#5382AE"
-                                android:textSize="16dp"
-                                android:textStyle="bold" />
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/cvImage1"
@@ -124,7 +126,7 @@
                                 android:fontFamily="Roboto"
                                 android:text="Bình Thanh Dist,\nHCMC"
                                 android:textColor="#000000"
-                                android:textSize="18dp"></TextView>
+                                android:textSize="18dp"/>
 
                             <TextView
                                 android:id="@+id/tvDistance1"
@@ -132,14 +134,17 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@id/tvViewMore1"
                                 android:layout_alignParentRight="true"
+                                android:layout_marginTop="15dp"
                                 android:layout_marginRight="10dp"
                                 android:background="@drawable/rounded_corner_with_border"
                                 android:fontFamily="Roboto"
-                                android:padding="3dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="3dp"
                                 android:text="2 km"
                                 android:textColor="#ffffff"
-                                android:textSize="16dp" />
-
+                                android:textSize="18dp"/>
                         </RelativeLayout>
 
                         <HorizontalScrollView
@@ -151,6 +156,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
                                 android:orientation="horizontal">
 
                                 <RelativeLayout
@@ -184,7 +190,7 @@
                                         android:text="Field A"
                                         android:textColor="#000000"
                                         android:textSize="18dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivStarIcon1"
@@ -206,7 +212,7 @@
                                         android:text="4.5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivMultiple1"
@@ -215,7 +221,7 @@
                                         android:layout_below="@+id/tvSmallFieldName1"
                                         android:layout_marginLeft="8dp"
                                         android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"></ImageView>
+                                        android:src="@drawable/multiple_user"/>
 
                                     <TextView
                                         android:id="@+id/tvAmount1"
@@ -228,7 +234,7 @@
                                         android:text="5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPriceIgnore1"
@@ -240,7 +246,7 @@
                                         android:text="$5 - $7/h"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPrice1"
@@ -253,7 +259,7 @@
                                         android:text="$4 - $5.6/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <View
                                         android:id="@+id/vdHorizontal1"
@@ -265,7 +271,7 @@
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"></View>
+                                        android:background="#000000"/>
 
                                     <TextView
                                         android:id="@+id/tvDiscount1"
@@ -277,7 +283,7 @@
                                         android:text="-20%"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvSlots1"
@@ -290,7 +296,7 @@
                                         android:text="Slots available: 2"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
 
                                 </RelativeLayout>
@@ -330,7 +336,7 @@
                                         android:text="Field B"
                                         android:textColor="#000000"
                                         android:textSize="18dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivStarIcon2"
@@ -352,7 +358,7 @@
                                         android:text="4.5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivMultiple2"
@@ -361,7 +367,7 @@
                                         android:layout_below="@+id/tvSmallFieldName2"
                                         android:layout_marginLeft="8dp"
                                         android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"></ImageView>
+                                        android:src="@drawable/multiple_user"/>
 
                                     <TextView
                                         android:id="@+id/tvAmount2"
@@ -374,7 +380,7 @@
                                         android:text="7"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPriceIgnore2"
@@ -386,7 +392,7 @@
                                         android:text="$6 - $8/h"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPrice2"
@@ -399,7 +405,7 @@
                                         android:text="$5.4 - $7.2/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <View
                                         android:id="@+id/vdHorizontal2"
@@ -411,7 +417,7 @@
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"></View>
+                                        android:background="#000000"/>
 
                                     <TextView
                                         android:id="@+id/tvDiscount2"
@@ -423,7 +429,7 @@
                                         android:text="-10%"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvSlots2"
@@ -436,7 +442,7 @@
                                         android:text="Slots available: 1"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                 </RelativeLayout>
 
@@ -476,7 +482,7 @@
                                         android:text="Field C"
                                         android:textColor="#000000"
                                         android:textSize="18dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivStarIcon3"
@@ -498,7 +504,7 @@
                                         android:text="4"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivMultiple3"
@@ -507,7 +513,7 @@
                                         android:layout_below="@+id/tvSmallFieldName3"
                                         android:layout_marginLeft="8dp"
                                         android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"></ImageView>
+                                        android:src="@drawable/multiple_user"/>
 
                                     <TextView
                                         android:id="@+id/tvAmount3"
@@ -520,7 +526,7 @@
                                         android:text="5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPriceIgnore3"
@@ -532,7 +538,7 @@
                                         android:text="$5 - $7/h"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPrice3"
@@ -545,7 +551,7 @@
                                         android:text="$4 - $5.6/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <View
                                         android:id="@+id/vdHorizontal3"
@@ -557,7 +563,7 @@
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"></View>
+                                        android:background="#000000"/>
 
                                     <TextView
                                         android:id="@+id/tvDiscount3"
@@ -569,7 +575,7 @@
                                         android:text="-10%"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvSlots3"
@@ -582,7 +588,7 @@
                                         android:text="Slots available: 3"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                 </RelativeLayout>
 
@@ -606,23 +612,27 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="View more >>"
+                                android:textColor="#5382AE"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center">
-
-                            <TextView
-                                android:id="@+id/tvViewMore2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="Roboto"
-                                android:text="View More >>"
-                                android:textColor="#5382AE"
-                                android:textSize="16dp"
-                                android:textStyle="bold"></TextView>
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/cvImage2"
@@ -679,13 +689,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@id/tvViewMore2"
                                 android:layout_alignParentRight="true"
+                                android:layout_marginTop="15dp"
                                 android:layout_marginRight="10dp"
                                 android:background="@drawable/rounded_corner_with_border"
                                 android:fontFamily="Roboto"
-                                android:paddingLeft="15dp"
-                                android:paddingTop="5dp"
-                                android:paddingRight="15dp"
-                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="3dp"
                                 android:text="3.5 km"
                                 android:textColor="#ffffff"
                                 android:textSize="18dp"></TextView>
@@ -700,6 +711,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
                                 android:orientation="horizontal">
 
                                 <RelativeLayout
@@ -733,7 +745,7 @@
                                         android:text="Field 1"
                                         android:textColor="#000000"
                                         android:textSize="18dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivStarIcon4"
@@ -742,8 +754,7 @@
                                         android:layout_below="@+id/cvSmallField4"
                                         android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName4"
-                                        android:src="@drawable/star"></ImageView>
+                                        android:layout_marginLeft="90dp"/>
 
                                     <TextView
                                         android:id="@+id/tvRate4"
@@ -755,7 +766,7 @@
                                         android:text="5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivMultiple4"
@@ -764,7 +775,7 @@
                                         android:layout_below="@+id/tvSmallFieldName4"
                                         android:layout_marginLeft="8dp"
                                         android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"></ImageView>
+                                        android:src="@drawable/multiple_user"/>
 
                                     <TextView
                                         android:id="@+id/tvAmount4"
@@ -777,7 +788,7 @@
                                         android:text="5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPriceIgnore4"
@@ -789,7 +800,7 @@
                                         android:text="$6 - $8/h"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPrice4"
@@ -802,7 +813,7 @@
                                         android:text="$4.8 - $6.4/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <View
                                         android:id="@+id/vdHorizontal4"
@@ -814,7 +825,7 @@
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"></View>
+                                        android:background="#000000"/>
 
                                     <TextView
                                         android:id="@+id/tvDiscount4"
@@ -826,7 +837,7 @@
                                         android:text="-20%"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvSlots4"
@@ -839,7 +850,7 @@
                                         android:text="Slots available: 1"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                 </RelativeLayout>
 
@@ -878,7 +889,7 @@
                                         android:text="Field 2"
                                         android:textColor="#000000"
                                         android:textSize="18dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivStarIcon5"
@@ -887,8 +898,7 @@
                                         android:layout_below="@+id/cvSmallField5"
                                         android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName5"
-                                        android:src="@drawable/star"></ImageView>
+                                        android:layout_marginLeft="90dp"/>
 
                                     <TextView
                                         android:id="@+id/tvRate5"
@@ -900,7 +910,7 @@
                                         android:text="4.5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivMultiple5"
@@ -909,7 +919,7 @@
                                         android:layout_below="@+id/tvSmallFieldName5"
                                         android:layout_marginLeft="8dp"
                                         android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"></ImageView>
+                                        android:src="@drawable/multiple_user"/>
 
                                     <TextView
                                         android:id="@+id/tvAmount5"
@@ -922,7 +932,7 @@
                                         android:text="5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPriceIgnore5"
@@ -934,7 +944,7 @@
                                         android:text="$5 - $7/h"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPrice5"
@@ -947,7 +957,7 @@
                                         android:text="$4.5 - $6.3/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <View
                                         android:id="@+id/vdHorizontal5"
@@ -959,7 +969,7 @@
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"></View>
+                                        android:background="#000000"/>
 
                                     <TextView
                                         android:id="@+id/tvDiscount5"
@@ -971,7 +981,7 @@
                                         android:text="-10%"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvSlots5"
@@ -984,7 +994,7 @@
                                         android:text="Slots available: 2"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                 </RelativeLayout>
 
@@ -1024,7 +1034,7 @@
                                         android:text="Field 3"
                                         android:textColor="#000000"
                                         android:textSize="18dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivStarIcon6"
@@ -1033,9 +1043,7 @@
                                         android:layout_below="@+id/cvSmallField6"
                                         android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName6"
-                                        android:src="@drawable/star"></ImageView>
-
+                                        android:layout_marginLeft="90dp"/>
                                     <TextView
                                         android:id="@+id/tvRate6"
                                         android:layout_width="match_parent"
@@ -1046,7 +1054,7 @@
                                         android:text="4"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <ImageView
                                         android:id="@+id/ivMultiple6"
@@ -1055,7 +1063,7 @@
                                         android:layout_below="@+id/tvSmallFieldName6"
                                         android:layout_marginLeft="8dp"
                                         android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"></ImageView>
+                                        android:src="@drawable/multiple_user"/>
 
                                     <TextView
                                         android:id="@+id/tvAmount6"
@@ -1068,7 +1076,7 @@
                                         android:text="7"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPriceIgnore6"
@@ -1080,7 +1088,7 @@
                                         android:text="$8 - $10/h"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvPrice6"
@@ -1093,7 +1101,7 @@
                                         android:text="$7.2 - $9/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <View
                                         android:id="@+id/vdHorizontal6"
@@ -1105,7 +1113,7 @@
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"></View>
+                                        android:background="#000000"/>
 
                                     <TextView
                                         android:id="@+id/tvDiscount6"
@@ -1117,7 +1125,7 @@
                                         android:text="-10%"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                     <TextView
                                         android:id="@+id/tvSlots6"
@@ -1130,7 +1138,7 @@
                                         android:text="Slots available: 1"
                                         android:textColor="#45AB2B"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"></TextView>
+                                        android:textStyle="bold"/>
 
                                 </RelativeLayout>
                             </LinearLayout>
@@ -1144,6 +1152,4 @@
         </androidx.core.widget.NestedScrollView>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
