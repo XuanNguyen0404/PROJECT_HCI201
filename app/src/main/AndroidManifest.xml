@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.football_field_booking">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,7 +17,25 @@
             android:name=".PromotionActivity"
             android:exported="true" />
         <activity
+            android:name=".ProfileEditByAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OwnerHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreateFootballFieldActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

@@ -27,12 +27,11 @@
                 app:liftOnScroll="true"
                 app:logo="@drawable/logo"
                 app:menu="@menu/top_app_bar"
+                app:navigationIcon="@drawable/back"
                 app:title="Promotion">
-
             </com.google.android.material.appbar.MaterialToolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
-
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,8 +41,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="70dp"
                 android:orientation="vertical">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -57,24 +56,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="View more >>"
+                                android:textColor="#5382AE"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center">
-
-                            <TextView
-                                android:id="@+id/tvViewMore1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="Roboto"
-                                android:text="View More >>"
-                                android:textColor="#5382AE"
-                                android:textSize="16dp"
-                                android:textStyle="bold">
-                            </TextView>
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/cvImage1"
@@ -120,31 +123,29 @@
                                 android:id="@+id/tvAddress"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_toRightOf="@id/ivLocation"
                                 android:layout_below="@id/tvFieldName1"
+                                android:layout_toRightOf="@id/ivLocation"
                                 android:fontFamily="Roboto"
                                 android:text="Bình Thanh Dist,\nHCMC"
                                 android:textColor="#000000"
-                                android:textSize="18dp">
-                            </TextView>
+                                android:textSize="18dp"></TextView>
 
                             <TextView
                                 android:id="@+id/tvDistance1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
+                                android:layout_marginTop="15dp"
                                 android:layout_marginRight="10dp"
-                                android:paddingTop="5dp"
-                                android:paddingBottom="5dp"
-                                android:paddingLeft="15dp"
-                                android:paddingRight="15dp"
-                                android:layout_below="@id/tvViewMore1"
-                                android:fontFamily="Roboto"
-                                android:text="2 km"
                                 android:background="@drawable/rounded_corner_with_border"
+                                android:fontFamily="Roboto"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="3dp"
+                                android:text="2 km"
                                 android:textColor="#ffffff"
-                                android:textSize="18dp">
-                            </TextView>
+                                android:textSize="18dp"></TextView>
 
                         </RelativeLayout>
 
@@ -155,6 +156,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
                                 android:orientation="horizontal">
 
                                 <RelativeLayout
@@ -614,24 +616,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="View more >>"
+                                android:textColor="#5382AE"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center">
-
-                            <TextView
-                                android:id="@+id/tvViewMore2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="Roboto"
-                                android:text="View More >>"
-                                android:textColor="#5382AE"
-                                android:textSize="16dp"
-                                android:textStyle="bold">
-                            </TextView>
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/cvImage2"
@@ -690,15 +697,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
+                                android:layout_marginTop="15dp"
                                 android:layout_marginRight="10dp"
-                                android:paddingTop="5dp"
-                                android:paddingBottom="5dp"
-                                android:paddingLeft="15dp"
-                                android:paddingRight="15dp"
-                                android:layout_below="@id/tvViewMore2"
-                                android:fontFamily="Roboto"
-                                android:text="3.5 km"
                                 android:background="@drawable/rounded_corner_with_border"
+                                android:fontFamily="Roboto"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="3dp"
+                                android:text="3.5 km"
                                 android:textColor="#ffffff"
                                 android:textSize="18dp">
                             </TextView>
@@ -712,6 +719,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
                                 android:orientation="horizontal">
 
                                 <RelativeLayout
@@ -1163,17 +1171,5 @@
         </androidx.core.widget.NestedScrollView>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
