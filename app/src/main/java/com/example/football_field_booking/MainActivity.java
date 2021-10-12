@@ -2,6 +2,7 @@ package com.example.football_field_booking;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
@@ -11,11 +12,14 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.football_field_booking.daos.UserDAO;
 import com.example.football_field_booking.dtos.UserDTO;
+import com.example.football_field_booking.fragments.CartFragment;
 import com.example.football_field_booking.fragments.ProfileFragment;
+import com.example.football_field_booking.fragments.TabFragment;
 import com.example.football_field_booking.fragments.UserHomeFragment;
 import com.example.football_field_booking.validations.Validation;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -32,13 +36,16 @@ public class MainActivity extends AppCompatActivity {
 
     private Validation validation = new Validation();
 
+    private FilterDialogFragment mFilterDialog;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        updateUI(user);
+//        updateUI(user);
 
         topAppBar = findViewById(R.id.topAppBar);
         topAppBar.setTitleTextAppearance(this, R.style.FontLogo);
@@ -65,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
                             return true;
                         }
                         break;
+                    case R.id.page_2:
+                        selectedFragment = new CartFragment();
+                        break;
+                    case R.id.page_3:
+                        selectedFragment = new TabFragment();
+                        break;
                     default:
                         return false;
                 }
@@ -83,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 
     private void updateUI(FirebaseUser user) {
         if (user != null) {
@@ -109,4 +123,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    public void clickToViewMorePromotion(View view) {
+        Intent intent=new Intent(MainActivity.this,PromotionActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickToViewDetalFootballField(View view) {
+        Intent intent=new Intent(MainActivity.this,OwnerFootballFieldDetailActivity.class);
+        startActivity(intent);
+    }
 }
