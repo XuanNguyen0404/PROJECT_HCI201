@@ -3,24 +3,26 @@ package com.example.football_field_booking.adapters;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
 import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.football_field_booking.fragments.HistoryNowFragment;
 import com.example.football_field_booking.fragments.HistoryPastFragment;
 
 
-public class PageHistoryAdapter extends FragmentStatePagerAdapter {
+public class PageHistoryAdapter extends FragmentStateAdapter {
 
 
-    public PageHistoryAdapter(@NonNull FragmentManager fm, int behavior) {
-        super(fm, behavior);
+    public PageHistoryAdapter(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
     }
 
     @NonNull
     @Override
-    public Fragment getItem(int position) {
+    public Fragment createFragment(int position) {
         switch (position){
             case 0:
                 return new HistoryPastFragment();
@@ -32,22 +34,7 @@ public class PageHistoryAdapter extends FragmentStatePagerAdapter {
     }
 
     @Override
-    public int getCount() {
+    public int getItemCount() {
         return 2;
-    }
-
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        String title ="";
-        switch (position){
-            case 0:
-                title = "Past";
-                break;
-            case 1:
-                title = "Now";
-                break;
-        }
-        return title;
     }
 }

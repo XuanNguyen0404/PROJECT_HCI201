@@ -2,10 +2,9 @@ package com.example.football_field_booking.fragments;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +12,14 @@ import android.view.ViewGroup;
 
 import com.example.football_field_booking.R;
 import com.example.football_field_booking.adapters.PageHistoryAdapter;
-import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 
 public class TabFragment extends Fragment {
 
     private TabLayout tabLayout;
-    private ViewPager viewPager;
+    private ViewPager2 viewPager;
     private View view;
     public TabFragment() {
         // Required empty public constructor
@@ -41,11 +40,20 @@ public class TabFragment extends Fragment {
         tabLayout = view.findViewById(R.id.tabBar);
         viewPager = view.findViewById(R.id.viewPager);
 
-        PageHistoryAdapter pageHistoryAdapter = new PageHistoryAdapter(getChildFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        PageHistoryAdapter pageHistoryAdapter = new PageHistoryAdapter(this.getActivity());
 
         viewPager.setAdapter(pageHistoryAdapter);
 
-        tabLayout.setupWithViewPager(viewPager);
+        new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                if(position ==0){
+                    tab.setText("Past");
+                }else {
+                    tab.setText("Now");
+                }
+            }
+        }).attach();
 
         return view;
     }
