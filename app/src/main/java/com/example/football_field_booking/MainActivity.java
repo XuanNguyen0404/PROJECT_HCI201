@@ -17,7 +17,9 @@ import android.widget.Toast;
 
 import com.example.football_field_booking.daos.UserDAO;
 import com.example.football_field_booking.dtos.UserDTO;
+import com.example.football_field_booking.fragments.CartFragment;
 import com.example.football_field_booking.fragments.ProfileFragment;
+import com.example.football_field_booking.fragments.TabFragment;
 import com.example.football_field_booking.fragments.UserHomeFragment;
 import com.example.football_field_booking.validations.Validation;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -69,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                             return true;
                         }
+                        break;
+                    case R.id.page_2:
+                        selectedFragment = new CartFragment();
+                        break;
+                    case R.id.page_3:
+                        selectedFragment = new TabFragment();
                         break;
                     default:
                         return false;
