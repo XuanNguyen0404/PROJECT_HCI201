@@ -72,7 +72,8 @@
                                 android:text="View more >>"
                                 android:textColor="#5382AE"
                                 android:textSize="16dp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:clickable="true"/>
                         </LinearLayout>
 
                         <RelativeLayout
@@ -152,8 +153,7 @@
                         <HorizontalScrollView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="10dp">
+                            android:layout_gravity="center">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -202,7 +202,7 @@
                                         android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
                                         android:layout_toRightOf="@+id/tvSmallFieldName1"
-                                        android:src="@drawable/star"></ImageView>
+                                        android:src="@drawable/star"/>
 
                                     <TextView
                                         android:id="@+id/tvRate1"
@@ -214,7 +214,7 @@
                                         android:text="4.5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:textStyle="bold" />
 
                                     <ImageView
                                         android:id="@+id/ivMultiple1"
@@ -223,7 +223,7 @@
                                         android:layout_below="@+id/tvSmallFieldName1"
                                         android:layout_marginLeft="8dp"
                                         android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"/>
+                                        android:src="@drawable/multiple_user" />
 
                                     <TextView
                                         android:id="@+id/tvAmount1"
@@ -236,7 +236,7 @@
                                         android:text="5"
                                         android:textColor="#000000"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/tvPriceIgnore1"
@@ -248,7 +248,7 @@
                                         android:text="$5 - $7/h"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/tvPrice1"
@@ -261,7 +261,7 @@
                                         android:text="$4 - $5.6/h"
                                         android:textColor="#030303"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:textStyle="bold" />
 
                                     <View
                                         android:id="@+id/vdHorizontal1"
@@ -273,7 +273,7 @@
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"/>
+                                        android:background="#000000" />
 
                                     <TextView
                                         android:id="@+id/tvDiscount1"
@@ -285,7 +285,7 @@
                                         android:text="-20%"
                                         android:textColor="#D31C1C"
                                         android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/tvSlots1"
@@ -451,7 +451,7 @@
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999"></View>
+                                    android:background="#999999"/>
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -494,7 +494,7 @@
                                         android:layout_marginLeft="90dp"
                                         android:layout_marginTop="3dp"
                                         android:layout_toRightOf="@+id/tvSmallFieldName3"
-                                        android:src="@drawable/star"></ImageView>
+                                        android:src="@drawable/star"/>
 
                                     <TextView
                                         android:id="@+id/tvRate3"
@@ -629,7 +629,8 @@
                                 android:text="View more >>"
                                 android:textColor="#5382AE"
                                 android:textSize="16dp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:clickable="true"/>
                         </LinearLayout>
 
                         <RelativeLayout
