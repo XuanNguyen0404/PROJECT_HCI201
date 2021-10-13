@@ -14,7 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Football_Field_Booking">
         <activity
+            android:name=".ListPromotionActivity"
+            android:exported="true" />
+        <activity
             android:name=".PromotionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileEditByAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OwnerHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".ProfileEditByAdminActivity"
@@ -41,6 +59,8 @@
             android:name=".UserFootballFieldDetailActivity"
             android:exported="true">
         </activity>
+            android:name=".OwnerFootballFieldDetailActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
