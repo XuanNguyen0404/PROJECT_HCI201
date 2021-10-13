@@ -3,28 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable-v24/ic_baseline_add_circle_24.xml" value="0.2526041666666667" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable-v24/ic_baseline_remove_circle_24.xml" value="0.2526041666666667" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/bg_app_bar.xml" value="0.24259259259259258" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/bg_football_field_detail.xml" value="0.24259259259259258" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/border.xml" value="0.24259259259259258" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/button_instance.xml" value="0.24259259259259258" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.24259259259259258" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.24259259259259258" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.24259259259259258" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_close_white_24px.xml" value="0.2526041666666667" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_filter_list_white_24px.xml" value="0.2526041666666667" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_monetization_on_white_24px.xml" value="0.2526041666666667" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_sort_white_24px.xml" value="0.2526041666666667" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/rounded_corner_with_border.xml" value="0.2526041666666667" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_create_football_field.xml" value="0.23645833333333333" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_onwer_football_field_detail.xml" value="0.176" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_owner_home.xml" value="0.23645833333333333" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_promotion.xml" value="0.2" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/dialog_filters.xml" value="0.23645833333333333" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_user_home.xml" value="0.264" />
-        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/menu/top_app_bar.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/abc.xml" value="0.25416666666666665" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/activity_create_football_field.xml" value="0.4" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
@@ -33,9 +11,16 @@
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/activity_owner_home.xml" value="0.25416666666666665" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/menu/top_app_bar.xml" value="0.25416666666666665" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/drawable-v24/comment_border.xml" value="0.26481481481481484" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/drawable/bg_app_bar.xml" value="0.28020833333333334" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/drawable/bg_football_field_detail.xml" value="0.3828125" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/drawable/ratingbar.xml" value="0.3828125" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/drawable/rounded_background_nocolor.xml" value="0.3828125" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/drawable/rounded_corner_with_border.xml" value="0.3828125" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/activity_admin_main.xml" value="0.36096014492753625" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/activity_owner_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/activity_promotion.xml" value="0.3229166666666667" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/custom_calendar_day.xml" value="0.2871376811594203" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/event_cell.xml" value="0.1" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/fragment_admin_home.xml" value="0.33152173913043476" />
@@ -48,6 +33,8 @@
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/fragment_tab.xml" value="0.22" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/fragment_user_home.xml" value="0.3104166666666667" />
         <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/layout/fragment_week_view.xml" value="0.33" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile1/PROJECT_HCI201/app/src/main/res/menu/top_app_bar.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/tienx/AndroidStudioProjects/Football_Field_Booking/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/tienx/AndroidStudioProjects/Football_Field_Booking/app/src/main/res/drawable/outline_account_circle_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/tienx/AndroidStudioProjects/Football_Field_Booking/app/src/main/res/drawable/outline_event_24.xml" value="0.22552083333333334" />
@@ -61,12 +48,6 @@
         <entry key="..\:/Users/tienx/AndroidStudioProjects/Football_Field_Booking/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/tienx/AndroidStudioProjects/Football_Field_Booking/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.209375" />
         <entry key="..\:/Users/tienx/AndroidStudioProjects/Football_Field_Booking/app/src/main/res/menu/top_app_bar.xml" value="0.209375" />
-        <entry key="..\:/Users/tienx/AndroidStudioProjects/PROJECT_HCI201/app/src/main/res/layout/activity_promotion.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/tienx/AndroidStudioProjects/PROJECT_HCI201/app/src/main/res/layout/fragment_user_home.xml" value="0.25" />
-        <entry key="..\:/Users/tienx/Desktop/PROJECT_HCI201/app/src/main/res/layout/activity_main.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/tienx/Desktop/PROJECT_HCI201/app/src/main/res/layout/fragment_admin_home.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/tienx/Desktop/PROJECT_HCI201/app/src/main/res/layout/fragment_profile.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/tienx/Desktop/PROJECT_HCI201/app/src/main/res/layout/fragment_user_home.xml" value="0.3169968717413973" />
         <entry key="..\:/Users/tienx/Desktop/PROJECT_PRM391/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/tienx/Desktop/PROJECT_PRM391/app/src/main/res/drawable/back.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/tienx/Desktop/PROJECT_PRM391/app/src/main/res/drawable/ic_user.xml" value="0.2078125" />

@@ -14,7 +14,8 @@ import com.example.football_field_booking.R;
 
 public class CartFragment extends Fragment {
 
-    private TextView tv26;
+    private TextView tv16;
+    private TextView tv24;
 
     public CartFragment() {
         // Required empty public constructor
@@ -31,9 +32,11 @@ public class CartFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cart, container, false);
-        tv26 = view.findViewById(R.id.textView26);
+        tv16 = view.findViewById(R.id.textView16);
+        tv24 = view.findViewById(R.id.textView24);
 
-        tv26.setPaintFlags(tv26.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        tv16.setPaintFlags(tv16.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        tv24.setPaintFlags(tv24.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         return view;
     }
 }
