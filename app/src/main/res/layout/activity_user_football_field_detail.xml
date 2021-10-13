@@ -171,6 +171,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
                             android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <TextView
@@ -188,6 +189,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="5$/h"
                                 android:textSize="14dp"
+                                android:textColor="@color/red"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="textEnd"
+                                android:text="-20%"
+                                android:textSize="16dp"
                                 android:textColor="@color/red"/>
                         </LinearLayout>
 

@@ -2,6 +2,7 @@ package com.example.football_field_booking;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -34,6 +35,9 @@ public class UserFootballFieldDetailActivity extends AppCompatActivity {
         calendar = Calendar.getInstance();
         txtSelectDate = findViewById(R.id.txtSelectDate);
         toggleButton=findViewById(R.id.tgBtn);
+        TextView textIgnore1 = findViewById(R.id.txtTextPriceDiscount);
+
+        textIgnore1.setPaintFlags(textIgnore1.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
         now = calendar.get(Calendar.DAY_OF_MONTH) +
                 "/" + (calendar.get(Calendar.MONTH) + 1) +
