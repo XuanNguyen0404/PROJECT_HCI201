@@ -124,4 +124,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void clickToViewMorePromotion(View view) {
+        Intent intent=new Intent(MainActivity.this,PromotionActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickToViewDetalFootballField(View view) {
+        Intent intent=new Intent(MainActivity.this,OwnerFootballFieldDetailActivity.class);
+        startActivity(intent);
+    }
 }

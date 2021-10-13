@@ -22,7 +22,7 @@
         <item name="android:layout_marginRight">25dp</item>
         <item name="android:layout_marginLeft">25dp</item>
         <item name="android:scaleType">fitStart</item>
-        <item name="android:background">@drawable/rounded_corner</item>
+        <item name="android:background">@android:color/background_light</item>
     </style>
     <style name="FontText">
         <item name="android:fontFamily">@font/roboto</item>
