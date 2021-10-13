@@ -35,21 +35,6 @@
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".ProfileEditByAdminActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ProfileEditActivity"
-            android:exported="true" />
-        <activity
-            android:name=".AdminMainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".OwnerHomeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="true" />
-        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
@@ -57,7 +42,7 @@
             android:exported="true" />
         <activity
             android:name=".OwnerFootballFieldDetailActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
