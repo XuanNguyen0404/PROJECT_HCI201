@@ -41,6 +41,7 @@
             android:name=".CreateFootballFieldActivity"
             android:exported="true" />
         <activity
+
             android:name=".UserFootballFieldDetailActivity"
             android:exported="true"/>
         <activity
