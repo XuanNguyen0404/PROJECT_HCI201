@@ -35,7 +35,7 @@ public class PromotionActivity extends AppCompatActivity {
         textIgnore6 = findViewById(R.id.tvPriceIgnore6);
 
         tvViewMore1 = findViewById(R.id.tvViewMore1);
-        tvViewMore2 = findViewById(R.id.tvViewMore2);
+//        tvViewMore2 = findViewById(R.id.tvViewMore2);
 
 
         textIgnore1.setPaintFlags(textIgnore1.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
@@ -53,13 +53,13 @@ public class PromotionActivity extends AppCompatActivity {
             }
         });
 
-        tvViewMore2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PromotionActivity.this, ListPromotionActivity.class);
-                startActivity(intent);
-            }
-        });
+//        tvViewMore2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(PromotionActivity.this, ListPromotionActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         topAppBar=findViewById(R.id.topAppBar);
         topAppBar.setTitle("Promotion");

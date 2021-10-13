@@ -76,16 +76,14 @@
                                 android:clickable="true"/>
                         </LinearLayout>
 
-                        <RelativeLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center">
+                            android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:id="@+id/cvImage1"
                                 android:layout_width="120dp"
                                 android:layout_height="100dp"
-                                android:layout_alignParentBottom="true"
                                 android:layout_margin="10dp"
                                 app:cardCornerRadius="20dp">
 
@@ -95,60 +93,56 @@
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/image_1" />
                             </androidx.cardview.widget.CardView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="20dp"
+                                        android:text="Duy Hoang Field"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/tvFieldName1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@id/cvImage1"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_toRightOf="@id/cvImage1"
-                                android:fontFamily="Roboto"
-                                android:text="Duy Hoang Field"
-                                android:textColor="#000000"
-                                android:textSize="18dp"
-                                android:textStyle="bold" />
-
-                            <ImageView
-                                android:id="@+id/ivLocation"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tvFieldName1"
-                                android:layout_toEndOf="@id/cvImage1"
-                                android:src="@drawable/outline_location_on_24"/>
-
-                            <TextView
-                                android:id="@+id/tvAddress"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tvFieldName1"
-                                android:layout_toRightOf="@id/ivLocation"
-                                android:fontFamily="Roboto"
-                                android:text="Bình Thanh Dist,\nHCMC"
-                                android:textColor="#000000"
-                                android:textSize="18dp"/>
-
-                            <TextView
-                                android:id="@+id/tvDistance1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tvViewMore1"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginTop="15dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/rounded_corner_with_border"
-                                android:fontFamily="Roboto"
-                                android:paddingLeft="10dp"
-                                android:paddingTop="3dp"
-                                android:paddingRight="10dp"
-                                android:paddingBottom="3dp"
-                                android:text="2 km"
-                                android:textColor="#ffffff"
-                                android:textSize="18dp"
-                                tools:ignore="NotSibling" />
-                        </RelativeLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/outline_location_on_24" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Bình Thanh Dist,\nHCMC"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:background="@drawable/button_instance"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="2 km"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                        </LinearLayout>
 
                         <HorizontalScrollView
                             android:layout_width="match_parent"
@@ -161,18 +155,15 @@
                                 android:paddingBottom="10dp"
                                 android:orientation="horizontal">
 
-                                <RelativeLayout
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:gravity="left">
+                                    android:orientation="vertical">
 
                                     <androidx.cardview.widget.CardView
-                                        android:id="@+id/cvSmallField1"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
-                                        android:layout_alignParentLeft="true"
-                                        android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp">
+                                        android:layout_margin="10dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
@@ -182,143 +173,194 @@
 
                                     </androidx.cardview.widget.CardView>
 
-                                    <TextView
-                                        android:id="@+id/tvSmallFieldName1"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField1"
-                                        android:layout_marginLeft="9dp"
-                                        android:gravity="left"
-                                        android:text="Field A"
-                                        android:textColor="#000000"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivStarIcon1"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="9dp"
+                                            android:gravity="left"
+                                            android:text="Field 5A"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField1"
-                                        android:layout_marginLeft="90dp"
-                                        android:layout_marginTop="3dp"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName1"
-                                        android:src="@drawable/star"/>
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft= "10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/multiple_user" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5"
+                                            android:textColor="#000000"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/tvRate1"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField1"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_toRightOf="@+id/ivStarIcon1"
-                                        android:text="4.5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold" />
-
-                                    <ImageView
-                                        android:id="@+id/ivMultiple1"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_below="@+id/tvSmallFieldName1"
-                                        android:layout_marginLeft="8dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user" />
-
-                                    <TextView
-                                        android:id="@+id/tvAmount1"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5:00 - 17:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="50dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-20%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/tvSmallFieldName1"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/ivMultiple1"
-                                        android:text="5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/tvPriceIgnore1"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$5"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$4"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple1"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="$5 - $7/h"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/tvPrice1"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="17:00 - 23:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-10%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple1"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore1"
-                                        android:text="$4 - $5.6/h"
-                                        android:textColor="#030303"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold" />
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$7"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$6.3"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
                                     <View
-                                        android:id="@+id/vdHorizontal1"
                                         android:layout_width="180dp"
                                         android:layout_height="0.5dp"
-                                        android:layout_below="@+id/tvPriceIgnore1"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_alignParentEnd="true"
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
                                         android:background="#000000" />
 
-                                    <TextView
-                                        android:id="@+id/tvDiscount1"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal1"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="-20%"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold" />
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/star"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5"
+                                            android:textColor="#000000"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
 
-                                    <TextView
-                                        android:id="@+id/tvSlots1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal1"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvDiscount1"
-                                        android:text="Slots available: 2"
-                                        android:textColor="#45AB2B"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginLeft="30dp"
+                                            android:gravity="right"
+                                            android:paddingRight="10dp"
+                                            android:text="Slots available: 4"
+                                            android:textColor="#45AB2B"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
 
 
-                                </RelativeLayout>
+                                </LinearLayout>
 
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999"></View>
+                                    android:background="#999999"/>
 
-                                <RelativeLayout
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
 
                                     <androidx.cardview.widget.CardView
-                                        android:id="@+id/cvSmallField2"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp">
+                                        android:layout_margin="10dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
@@ -328,271 +370,374 @@
 
                                     </androidx.cardview.widget.CardView>
 
-                                    <TextView
-                                        android:id="@+id/tvSmallFieldName2"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField2"
-                                        android:layout_marginLeft="9dp"
-                                        android:gravity="left"
-                                        android:text="Field B"
-                                        android:textColor="#000000"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivStarIcon2"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="9dp"
+                                            android:gravity="left"
+                                            android:text="Field 5B"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField2"
-                                        android:layout_marginLeft="90dp"
-                                        android:layout_marginTop="3dp"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName2"
-                                        android:src="@drawable/star"></ImageView>
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft= "10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/multiple_user" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5"
+                                            android:textColor="#000000"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/tvRate2"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField2"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_toRightOf="@+id/ivStarIcon2"
-                                        android:text="4.5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivMultiple2"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_below="@+id/tvSmallFieldName2"
-                                        android:layout_marginLeft="8dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"/>
-
-                                    <TextView
-                                        android:id="@+id/tvAmount2"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5:00 - 17:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="50dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-15%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/tvSmallFieldName2"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/ivMultiple2"
-                                        android:text="7"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPriceIgnore2"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$5"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$4.25"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple2"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="$6 - $8/h"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPrice2"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="17:00 - 23:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-10%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple2"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore2"
-                                        android:text="$5.4 - $7.2/h"
-                                        android:textColor="#030303"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$7"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$6.3"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
                                     <View
-                                        android:id="@+id/vdHorizontal2"
                                         android:layout_width="180dp"
                                         android:layout_height="0.5dp"
-                                        android:layout_below="@+id/tvPriceIgnore2"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_alignParentEnd="true"
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"/>
+                                        android:background="#000000" />
 
-                                    <TextView
-                                        android:id="@+id/tvDiscount2"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal2"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="-10%"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/star"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="4.5"
+                                            android:textColor="#000000"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginLeft="30dp"
+                                            android:gravity="right"
+                                            android:paddingRight="10dp"
+                                            android:text="Slots available: 2"
+                                            android:textColor="#45AB2B"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/tvSlots2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal2"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvDiscount2"
-                                        android:text="Slots available: 1"
-                                        android:textColor="#45AB2B"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
 
-                                </RelativeLayout>
-
+                                </LinearLayout>
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
                                     android:background="#999999"/>
-
-                                <RelativeLayout
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:gravity="left">
+                                    android:orientation="vertical">
 
                                     <androidx.cardview.widget.CardView
-                                        android:id="@+id/cvSmallField3"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
-                                        android:layout_alignParentLeft="true"
-                                        android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp">
+                                        android:layout_margin="10dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:scaleType="centerCrop"
-                                            android:src="@drawable/field3" />
+                                            android:src="@drawable/field1" />
 
                                     </androidx.cardview.widget.CardView>
 
-                                    <TextView
-                                        android:id="@+id/tvSmallFieldName3"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField3"
-                                        android:layout_marginLeft="9dp"
-                                        android:gravity="left"
-                                        android:text="Field C"
-                                        android:textColor="#000000"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivStarIcon3"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="9dp"
+                                            android:gravity="left"
+                                            android:text="Field 7A"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField3"
-                                        android:layout_marginLeft="90dp"
-                                        android:layout_marginTop="3dp"
-                                        android:layout_toRightOf="@+id/tvSmallFieldName3"
-                                        android:src="@drawable/star"/>
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft= "10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/multiple_user" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="7"
+                                            android:textColor="#000000"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/tvRate3"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField3"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_toRightOf="@+id/ivStarIcon3"
-                                        android:text="4"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivMultiple3"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_below="@+id/tvSmallFieldName3"
-                                        android:layout_marginLeft="8dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"/>
-
-                                    <TextView
-                                        android:id="@+id/tvAmount3"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5:00 - 17:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="50dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-15%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/tvSmallFieldName3"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/ivMultiple3"
-                                        android:text="5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPriceIgnore3"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$10"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$8.5"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple3"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="$5 - $7/h"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPrice3"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="17:00 - 23:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-10%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple3"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore3"
-                                        android:text="$4 - $5.6/h"
-                                        android:textColor="#030303"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$12"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$10.8"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
                                     <View
-                                        android:id="@+id/vdHorizontal3"
                                         android:layout_width="180dp"
                                         android:layout_height="0.5dp"
-                                        android:layout_below="@+id/tvPriceIgnore3"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_alignParentEnd="true"
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"/>
+                                        android:background="#000000" />
 
-                                    <TextView
-                                        android:id="@+id/tvDiscount3"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal3"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="-10%"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
 
-                                    <TextView
-                                        android:id="@+id/tvSlots3"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal3"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvDiscount3"
-                                        android:text="Slots available: 3"
-                                        android:textColor="#45AB2B"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/star"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="4.5"
+                                            android:textColor="#000000"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
 
-                                </RelativeLayout>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginLeft="30dp"
+                                            android:gravity="right"
+                                            android:paddingRight="10dp"
+                                            android:text="Slots available: 2"
+                                            android:textColor="#45AB2B"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
 
                             </LinearLayout>
                         </HorizontalScrollView>
@@ -633,16 +778,14 @@
                                 android:clickable="true"/>
                         </LinearLayout>
 
-                        <RelativeLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center">
+                            android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:id="@+id/cvImage2"
                                 android:layout_width="120dp"
                                 android:layout_height="100dp"
-                                android:layout_alignParentBottom="true"
                                 android:layout_margin="10dp"
                                 app:cardCornerRadius="20dp">
 
@@ -652,61 +795,56 @@
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/image_1" />
                             </androidx.cardview.widget.CardView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="20dp"
+                                        android:text="Anh Thy Field"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/tvFieldName2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@id/cvImage2"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="20dp"
-                                android:layout_toRightOf="@id/cvImage2"
-                                android:fontFamily="Roboto"
-                                android:text="Anh Thy Field"
-                                android:textColor="#000000"
-                                android:textSize="18dp"
-                                android:textStyle="bold"/>
-
-                            <ImageView
-                                android:id="@+id/ivLocation2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tvFieldName2"
-                                android:layout_toRightOf="@id/cvImage2"
-                                android:src="@drawable/outline_location_on_24"/>
-
-                            <TextView
-                                android:id="@+id/tvAddress2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tvFieldName2"
-                                android:layout_toRightOf="@id/ivLocation2"
-                                android:fontFamily="Roboto"
-                                android:text="Thu Duc city,\nHCMC"
-                                android:textColor="#000000"
-                                android:textSize="18dp"/>
-
-                            <TextView
-                                android:id="@+id/tvDistance2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tvViewMore2"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginTop="15dp"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/rounded_corner_with_border"
-                                android:fontFamily="Roboto"
-                                android:paddingLeft="10dp"
-                                android:paddingTop="3dp"
-                                android:paddingRight="10dp"
-                                android:paddingBottom="3dp"
-                                android:text="3.5 km"
-                                android:textColor="#ffffff"
-                                android:textSize="18dp"
-                                tools:ignore="NotSibling" />
-
-                        </RelativeLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/outline_location_on_24" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Thu Duc city,\nHCMC"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:background="@drawable/button_instance"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="3.5 km"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                        </LinearLayout>
 
                         <HorizontalScrollView
                             android:layout_width="match_parent"
@@ -719,435 +857,596 @@
                                 android:paddingBottom="10dp"
                                 android:orientation="horizontal">
 
-                                <RelativeLayout
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:gravity="left">
+                                    android:orientation="vertical">
 
                                     <androidx.cardview.widget.CardView
-                                        android:id="@+id/cvSmallField4"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
-                                        android:layout_alignParentLeft="true"
-                                        android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp">
+                                        android:layout_margin="10dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:scaleType="centerCrop"
-                                            android:src="@drawable/field1" />
+                                            android:src="@drawable/field4" />
 
                                     </androidx.cardview.widget.CardView>
 
-                                    <TextView
-                                        android:id="@+id/tvSmallFieldName4"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField4"
-                                        android:layout_marginLeft="9dp"
-                                        android:gravity="left"
-                                        android:text="Field 1"
-                                        android:textColor="#000000"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivStarIcon4"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="9dp"
+                                            android:gravity="left"
+                                            android:text="Field 5A"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField4"
-                                        android:layout_marginLeft="90dp"
-                                        android:layout_marginTop="3dp" />
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft= "10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/multiple_user" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5"
+                                            android:textColor="#000000"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/tvRate4"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField4"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_toRightOf="@+id/ivStarIcon4"
-                                        android:text="5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivMultiple4"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_below="@+id/tvSmallFieldName4"
-                                        android:layout_marginLeft="8dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"/>
-
-                                    <TextView
-                                        android:id="@+id/tvAmount4"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5:00 - 17:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="50dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-25%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/tvSmallFieldName4"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/ivMultiple4"
-                                        android:text="5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPriceIgnore4"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore7"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$6"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$4.5"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple4"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="$6 - $8/h"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPrice4"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="17:00 - 23:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-15%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple4"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore4"
-                                        android:text="$4.8 - $6.4/h"
-                                        android:textColor="#030303"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore8"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$9"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$7.65"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
                                     <View
-                                        android:id="@+id/vdHorizontal4"
                                         android:layout_width="180dp"
                                         android:layout_height="0.5dp"
-                                        android:layout_below="@+id/tvPriceIgnore4"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_alignParentEnd="true"
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"/>
+                                        android:background="#000000" />
 
-                                    <TextView
-                                        android:id="@+id/tvDiscount4"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal4"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="-20%"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/star"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="4.5"
+                                            android:textColor="#000000"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
 
-                                    <TextView
-                                        android:id="@+id/tvSlots4"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal4"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvDiscount4"
-                                        android:text="Slots available: 1"
-                                        android:textColor="#45AB2B"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginLeft="30dp"
+                                            android:gravity="right"
+                                            android:paddingRight="10dp"
+                                            android:text="Slots available: 5"
+                                            android:textColor="#45AB2B"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
 
-                                </RelativeLayout>
+
+                                </LinearLayout>
 
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999"></View>
+                                    android:background="#999999"/>
 
-                                <RelativeLayout
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
 
                                     <androidx.cardview.widget.CardView
-                                        android:id="@+id/cvSmallField5"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
-                                        android:layout_alignParentRight="true"
-                                        android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp">
+                                        android:layout_margin="10dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:scaleType="centerCrop"
-                                            android:src="@drawable/field2" />
+                                            android:src="@drawable/field5" />
 
                                     </androidx.cardview.widget.CardView>
 
-                                    <TextView
-                                        android:id="@+id/tvSmallFieldName5"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField5"
-                                        android:layout_marginLeft="9dp"
-                                        android:gravity="left"
-                                        android:text="Field 2"
-                                        android:textColor="#000000"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivStarIcon5"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="9dp"
+                                            android:gravity="left"
+                                            android:text="Field 5B"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField5"
-                                        android:layout_marginLeft="90dp"
-                                        android:layout_marginTop="3dp" />
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft= "10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/multiple_user" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5"
+                                            android:textColor="#000000"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/tvRate5"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField5"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_toRightOf="@+id/ivStarIcon5"
-                                        android:text="4.5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivMultiple5"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_below="@+id/tvSmallFieldName5"
-                                        android:layout_marginLeft="8dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"/>
-
-                                    <TextView
-                                        android:id="@+id/tvAmount5"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5:00 - 17:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="50dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-20%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/tvSmallFieldName5"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/ivMultiple5"
-                                        android:text="5"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPriceIgnore5"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore9"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$6"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$4.8"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple5"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="$5 - $7/h"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPrice5"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="17:00 - 23:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-15%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple5"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore5"
-                                        android:text="$4.5 - $6.3/h"
-                                        android:textColor="#030303"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore10"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$7"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$5.95"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
                                     <View
-                                        android:id="@+id/vdHorizontal5"
                                         android:layout_width="180dp"
                                         android:layout_height="0.5dp"
-                                        android:layout_below="@+id/tvPriceIgnore5"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_alignParentEnd="true"
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"/>
+                                        android:background="#000000" />
 
-                                    <TextView
-                                        android:id="@+id/tvDiscount5"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal5"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="-10%"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/star"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="4"
+                                            android:textColor="#000000"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginLeft="30dp"
+                                            android:gravity="right"
+                                            android:paddingRight="10dp"
+                                            android:text="Slots available: 4"
+                                            android:textColor="#45AB2B"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/tvSlots5"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal5"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvDiscount5"
-                                        android:text="Slots available: 2"
-                                        android:textColor="#45AB2B"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
 
-                                </RelativeLayout>
-
+                                </LinearLayout>
                                 <View
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
-                                    android:background="#999999"></View>
-
-                                <RelativeLayout
+                                    android:background="#999999"/>
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:gravity="left">
+                                    android:orientation="vertical">
 
                                     <androidx.cardview.widget.CardView
-                                        android:id="@+id/cvSmallField6"
                                         android:layout_width="180dp"
                                         android:layout_height="120dp"
-                                        android:layout_alignParentLeft="true"
-                                        android:layout_margin="10dp"
-                                        app:cardCornerRadius="20dp">
+                                        android:layout_margin="10dp">
 
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:scaleType="centerCrop"
-                                            android:src="@drawable/field3" />
+                                            android:src="@drawable/field6" />
 
                                     </androidx.cardview.widget.CardView>
 
-                                    <TextView
-                                        android:id="@+id/tvSmallFieldName6"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField6"
-                                        android:layout_marginLeft="9dp"
-                                        android:gravity="left"
-                                        android:text="Field 3"
-                                        android:textColor="#000000"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="9dp"
+                                            android:gravity="left"
+                                            android:text="Field 7A"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft= "10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/multiple_user" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="7"
+                                            android:textColor="#000000"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
-                                    <ImageView
-                                        android:id="@+id/ivStarIcon6"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField6"
-                                        android:layout_marginLeft="90dp"
-                                        android:layout_marginTop="3dp" />
-                                    <TextView
-                                        android:id="@+id/tvRate6"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="5:00 - 17:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="50dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-10%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/cvSmallField6"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_toRightOf="@+id/ivStarIcon6"
-                                        android:text="4"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <ImageView
-                                        android:id="@+id/ivMultiple6"
-                                        android:layout_width="20dp"
-                                        android:layout_height="20dp"
-                                        android:layout_below="@+id/tvSmallFieldName6"
-                                        android:layout_marginLeft="8dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/multiple_user"/>
-
-                                    <TextView
-                                        android:id="@+id/tvAmount6"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore11"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$15"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$13.5"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/tvSmallFieldName6"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/ivMultiple6"
-                                        android:text="7"
-                                        android:textColor="#000000"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPriceIgnore6"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="17:00 - 23:00"
+                                            android:textColor="#392BD0"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="-10%"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple6"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="$8 - $10/h"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
-
-                                    <TextView
-                                        android:id="@+id/tvPrice6"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/ivMultiple6"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvPriceIgnore6"
-                                        android:text="$7.2 - $9/h"
-                                        android:textColor="#030303"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvPriceIgnore12"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$20"
+                                            android:textColor="#D31C1C"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="40dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="$18"
+                                            android:textColor="#030303"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
 
                                     <View
-                                        android:id="@+id/vdHorizontal6"
                                         android:layout_width="180dp"
                                         android:layout_height="0.5dp"
-                                        android:layout_below="@+id/tvPriceIgnore6"
-                                        android:layout_alignParentStart="true"
-                                        android:layout_alignParentEnd="true"
                                         android:layout_marginStart="10dp"
                                         android:layout_marginTop="5dp"
                                         android:layout_marginEnd="10dp"
-                                        android:background="#000000"/>
+                                        android:background="#000000" />
 
-                                    <TextView
-                                        android:id="@+id/tvDiscount6"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal6"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginTop="5dp"
-                                        android:text="-10%"
-                                        android:textColor="#D31C1C"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        android:orientation="horizontal">
 
-                                    <TextView
-                                        android:id="@+id/tvSlots6"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/vdHorizontal6"
-                                        android:layout_marginLeft="40dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_toRightOf="@+id/tvDiscount6"
-                                        android:text="Slots available: 1"
-                                        android:textColor="#45AB2B"
-                                        android:textSize="14dp"
-                                        android:textStyle="bold"/>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="5dp"
+                                            android:src="@drawable/star"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="4"
+                                            android:textColor="#000000"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
 
-                                </RelativeLayout>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginLeft="30dp"
+                                            android:gravity="right"
+                                            android:paddingRight="10dp"
+                                            android:text="Slots available: 2"
+                                            android:textColor="#45AB2B"
+                                            android:textSize="14dp"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
                             </LinearLayout>
                         </HorizontalScrollView>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
             </LinearLayout>
 
 

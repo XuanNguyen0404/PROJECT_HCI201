@@ -41,6 +41,7 @@
              <LinearLayout
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
                  android:orientation="vertical">
 
                  <androidx.cardview.widget.CardView
@@ -90,7 +91,7 @@
 
                              <androidx.cardview.widget.CardView
                                  android:layout_width="180dp"
-                                 android:layout_height="120dp"
+                                 android:layout_height="150dp"
                                  android:layout_margin="10dp">
                                  <ImageView
                                      android:layout_width="match_parent"
@@ -120,29 +121,55 @@
                                          android:layout_marginTop="5dp"
                                          android:text="5"
                                          android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
+                                 </LinearLayout>
+
+<!--                                 not this-->
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <ImageView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="5dp"
+                                         android:layout_marginTop="5dp"
+                                         android:src="@drawable/outline_location_on_24" />
                                      <TextView
-                                         android:layout_width="match_parent"
+                                         android:layout_width="wrap_content"
                                          android:layout_height="wrap_content"
                                          android:layout_marginLeft="10dp"
                                          android:layout_marginTop="5dp"
-                                         android:paddingRight="10dp"
-                                         android:gravity="right"
                                          android:text="HCMC"
                                          android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
-                                 <TextView
+
+                                 <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
-                                     android:layout_marginLeft="10dp"
-                                     android:layout_marginTop="5dp"
-                                     android:text="5:00 AM to 17:00 PM"
-                                     android:textColor="#030303"
-                                     android:textSize="14dp"
-                                     android:textStyle="bold" />
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="5:00 - 17:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="50dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="-20%"
+                                         android:textColor="#D31C1C"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
                                  <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
@@ -155,7 +182,7 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$5"
                                          android:textColor="#D31C1C"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                      <TextView
                                          android:layout_width="match_parent"
@@ -164,18 +191,32 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$4"
                                          android:textColor="#030303"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
-                                 <TextView
+                                 <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
-                                     android:layout_marginLeft="10dp"
-                                     android:layout_marginTop="5dp"
-                                     android:text="17:00 PM to 00:00 AM"
-                                     android:textColor="#030303"
-                                     android:textSize="14dp"
-                                     android:textStyle="bold" />
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="17:00 - 23:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="40dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="-10%"
+                                         android:textColor="#D31C1C"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
                                  <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
@@ -188,36 +229,16 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$7"
                                          android:textColor="#D31C1C"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                      <TextView
                                          android:layout_width="match_parent"
                                          android:layout_height="wrap_content"
                                          android:layout_marginLeft="10dp"
                                          android:layout_marginTop="5dp"
-                                         android:text="$5.6"
+                                         android:text="$6.3"
                                          android:textColor="#030303"
-                                         android:textSize="14dp"
-                                         android:textStyle="bold" />
-                                 </LinearLayout>
-                                 <LinearLayout
-                                     android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"
-                                     android:orientation="horizontal">
-                                    <ImageView
-                                         android:layout_width="20dp"
-                                         android:layout_height="20dp"
-                                         android:layout_marginLeft="8dp"
-                                         android:layout_marginTop="5dp"
-                                         android:src="@drawable/star"/>
-                                     <TextView
-                                         android:layout_width="match_parent"
-                                         android:layout_height="wrap_content"
-                                         android:layout_marginLeft="10dp"
-                                         android:layout_marginTop="5dp"
-                                         android:text="5"
-                                         android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
                              </LinearLayout>
@@ -233,23 +254,30 @@
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:orientation="horizontal">
+                             <ImageView
+                                 android:layout_width="20dp"
+                                 android:layout_height="20dp"
+                                 android:layout_marginLeft="8dp"
+                                 android:layout_marginTop="5dp"
+                                 android:src="@drawable/star"/>
                              <TextView
-                                 android:layout_width="195dp"
+                                 android:layout_width="wrap_content"
                                  android:layout_height="wrap_content"
                                  android:layout_marginLeft="10dp"
                                  android:layout_marginTop="5dp"
-                                 android:text="-20%"
-                                 android:textColor="#D31C1C"
-                                 android:textSize="14dp"
+                                 android:text="5"
+                                 android:textColor="#000000"
+                                 android:textSize="16dp"
                                  android:textStyle="bold" />
                              <TextView
-                                 android:layout_width="195dp"
+                                 android:layout_width="match_parent"
                                  android:layout_height="wrap_content"
-                                 android:layout_marginLeft="50dp"
                                  android:layout_marginTop="5dp"
+                                 android:paddingRight="15dp"
+                                 android:gravity="right"
                                  android:text="Slots available: 5"
                                  android:textColor="#45AB2B"
-                                 android:textSize="14dp"
+                                 android:textSize="16dp"
                                  android:textStyle="bold" />
                          </LinearLayout>
                      </LinearLayout>
@@ -302,7 +330,7 @@
 
                              <androidx.cardview.widget.CardView
                                  android:layout_width="180dp"
-                                 android:layout_height="120dp"
+                                 android:layout_height="150dp"
                                  android:layout_margin="10dp">
                                  <ImageView
                                      android:layout_width="match_parent"
@@ -332,29 +360,53 @@
                                          android:layout_marginTop="5dp"
                                          android:text="5"
                                          android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
+                                 </LinearLayout>
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <ImageView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="5dp"
+                                         android:layout_marginTop="5dp"
+                                         android:src="@drawable/outline_location_on_24" />
                                      <TextView
-                                         android:layout_width="match_parent"
+                                         android:layout_width="wrap_content"
                                          android:layout_height="wrap_content"
                                          android:layout_marginLeft="10dp"
                                          android:layout_marginTop="5dp"
-                                         android:paddingRight="10dp"
-                                         android:gravity="right"
                                          android:text="HCMC"
                                          android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
-                                 <TextView
+
+                                 <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
-                                     android:layout_marginLeft="10dp"
-                                     android:layout_marginTop="5dp"
-                                     android:text="5:00 AM to 17:00 PM"
-                                     android:textColor="#030303"
-                                     android:textSize="14dp"
-                                     android:textStyle="bold" />
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="5:00 - 17:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="50dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="-15%"
+                                         android:textColor="#D31C1C"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
                                  <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
@@ -367,7 +419,7 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$5"
                                          android:textColor="#D31C1C"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                      <TextView
                                          android:layout_width="match_parent"
@@ -376,18 +428,33 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$4.25"
                                          android:textColor="#030303"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
-                                 <TextView
+                                 <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
-                                     android:layout_marginLeft="10dp"
-                                     android:layout_marginTop="5dp"
-                                     android:text="17:00 PM to 00:00 AM"
-                                     android:textColor="#030303"
-                                     android:textSize="14dp"
-                                     android:textStyle="bold" />
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="17:00 - 23:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="40dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="-10%"
+                                         android:textColor="#D31C1C"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
+
                                  <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
@@ -400,36 +467,16 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$7"
                                          android:textColor="#D31C1C"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                      <TextView
                                          android:layout_width="match_parent"
                                          android:layout_height="wrap_content"
                                          android:layout_marginLeft="10dp"
                                          android:layout_marginTop="5dp"
-                                         android:text="$5.95"
+                                         android:text="$6.3"
                                          android:textColor="#030303"
-                                         android:textSize="14dp"
-                                         android:textStyle="bold" />
-                                 </LinearLayout>
-                                 <LinearLayout
-                                     android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"
-                                     android:orientation="horizontal">
-                                     <ImageView
-                                         android:layout_width="20dp"
-                                         android:layout_height="20dp"
-                                         android:layout_marginLeft="8dp"
-                                         android:layout_marginTop="5dp"
-                                         android:src="@drawable/star"/>
-                                     <TextView
-                                         android:layout_width="match_parent"
-                                         android:layout_height="wrap_content"
-                                         android:layout_marginLeft="10dp"
-                                         android:layout_marginTop="5dp"
-                                         android:text="4.5"
-                                         android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
                              </LinearLayout>
@@ -445,23 +492,30 @@
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:orientation="horizontal">
+                             <ImageView
+                                 android:layout_width="20dp"
+                                 android:layout_height="20dp"
+                                 android:layout_marginLeft="8dp"
+                                 android:layout_marginTop="5dp"
+                                 android:src="@drawable/star"/>
                              <TextView
-                                 android:layout_width="195dp"
+                                 android:layout_width="wrap_content"
                                  android:layout_height="wrap_content"
                                  android:layout_marginLeft="10dp"
                                  android:layout_marginTop="5dp"
-                                 android:text="-15%"
-                                 android:textColor="#D31C1C"
-                                 android:textSize="14dp"
+                                 android:text="4.5"
+                                 android:textColor="#000000"
+                                 android:textSize="16dp"
                                  android:textStyle="bold" />
                              <TextView
-                                 android:layout_width="195dp"
+                                 android:layout_width="match_parent"
                                  android:layout_height="wrap_content"
-                                 android:layout_marginLeft="50dp"
                                  android:layout_marginTop="5dp"
+                                 android:paddingRight="15dp"
+                                 android:gravity="right"
                                  android:text="Slots available: 2"
                                  android:textColor="#45AB2B"
-                                 android:textSize="14dp"
+                                 android:textSize="16dp"
                                  android:textStyle="bold" />
                          </LinearLayout>
                      </LinearLayout>
@@ -514,7 +568,7 @@
 
                              <androidx.cardview.widget.CardView
                                  android:layout_width="180dp"
-                                 android:layout_height="120dp"
+                                 android:layout_height="150dp"
                                  android:layout_margin="10dp">
                                  <ImageView
                                      android:layout_width="match_parent"
@@ -544,29 +598,53 @@
                                          android:layout_marginTop="5dp"
                                          android:text="7"
                                          android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
+                                 </LinearLayout>
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <ImageView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="5dp"
+                                         android:layout_marginTop="5dp"
+                                         android:src="@drawable/outline_location_on_24" />
                                      <TextView
-                                         android:layout_width="match_parent"
+                                         android:layout_width="wrap_content"
                                          android:layout_height="wrap_content"
                                          android:layout_marginLeft="10dp"
                                          android:layout_marginTop="5dp"
-                                         android:paddingRight="10dp"
-                                         android:gravity="right"
                                          android:text="HCMC"
                                          android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
-                                 <TextView
+
+                                 <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
-                                     android:layout_marginLeft="10dp"
-                                     android:layout_marginTop="5dp"
-                                     android:text="5:00 AM to 17:00 PM"
-                                     android:textColor="#030303"
-                                     android:textSize="14dp"
-                                     android:textStyle="bold" />
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="5:00 - 17:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="50dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="-10%"
+                                         android:textColor="#D31C1C"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
                                  <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
@@ -579,7 +657,7 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$10"
                                          android:textColor="#D31C1C"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                      <TextView
                                          android:layout_width="match_parent"
@@ -588,60 +666,36 @@
                                          android:layout_marginTop="5dp"
                                          android:text="$9"
                                          android:textColor="#030303"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
-                                 <TextView
-                                     android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"
-                                     android:layout_marginLeft="10dp"
-                                     android:layout_marginTop="5dp"
-                                     android:text="17:00 PM to 00:00 AM"
-                                     android:textColor="#030303"
-                                     android:textSize="14dp"
-                                     android:textStyle="bold" />
                                  <LinearLayout
                                      android:layout_width="match_parent"
                                      android:layout_height="wrap_content"
                                      android:orientation="horizontal">
                                      <TextView
-                                         android:id="@+id/tvChildPriceIgnore6"
-                                         android:layout_width="50dp"
+                                         android:layout_width="wrap_content"
                                          android:layout_height="wrap_content"
                                          android:layout_marginLeft="10dp"
                                          android:layout_marginTop="5dp"
-                                         android:text="$15"
-                                         android:textColor="#D31C1C"
-                                         android:textSize="14dp"
+                                         android:text="17:00 - 23:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
+                                 </LinearLayout>
+
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
                                      <TextView
                                          android:layout_width="match_parent"
                                          android:layout_height="wrap_content"
                                          android:layout_marginLeft="10dp"
                                          android:layout_marginTop="5dp"
-                                         android:text="$13.5"
+                                         android:text="$12"
                                          android:textColor="#030303"
-                                         android:textSize="14dp"
-                                         android:textStyle="bold" />
-                                 </LinearLayout>
-                                 <LinearLayout
-                                     android:layout_width="match_parent"
-                                     android:layout_height="wrap_content"
-                                     android:orientation="horizontal">
-                                     <ImageView
-                                         android:layout_width="20dp"
-                                         android:layout_height="20dp"
-                                         android:layout_marginLeft="8dp"
-                                         android:layout_marginTop="5dp"
-                                         android:src="@drawable/star"/>
-                                     <TextView
-                                         android:layout_width="match_parent"
-                                         android:layout_height="wrap_content"
-                                         android:layout_marginLeft="10dp"
-                                         android:layout_marginTop="5dp"
-                                         android:text="4.5"
-                                         android:textColor="#000000"
-                                         android:textSize="14dp"
+                                         android:textSize="16dp"
                                          android:textStyle="bold" />
                                  </LinearLayout>
                              </LinearLayout>
@@ -657,23 +711,249 @@
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:orientation="horizontal">
+                             <ImageView
+                                 android:layout_width="20dp"
+                                 android:layout_height="20dp"
+                                 android:layout_marginLeft="8dp"
+                                 android:layout_marginTop="5dp"
+                                 android:src="@drawable/star"/>
                              <TextView
-                                 android:layout_width="195dp"
+                                 android:layout_width="wrap_content"
                                  android:layout_height="wrap_content"
                                  android:layout_marginLeft="10dp"
                                  android:layout_marginTop="5dp"
-                                 android:text="-10%"
-                                 android:textColor="#D31C1C"
-                                 android:textSize="14dp"
+                                 android:text="4.5"
+                                 android:textColor="#000000"
+                                 android:textSize="16dp"
                                  android:textStyle="bold" />
                              <TextView
-                                 android:layout_width="195dp"
+                                 android:layout_width="match_parent"
                                  android:layout_height="wrap_content"
-                                 android:layout_marginLeft="50dp"
                                  android:layout_marginTop="5dp"
+                                 android:paddingRight="15dp"
+                                 android:gravity="right"
                                  android:text="Slots available: 2"
                                  android:textColor="#45AB2B"
-                                 android:textSize="14dp"
+                                 android:textSize="16dp"
+                                 android:textStyle="bold" />
+                         </LinearLayout>
+                     </LinearLayout>
+                 </androidx.cardview.widget.CardView>
+
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="5dp"
+                     android:layout_marginBottom="10dp"
+                     android:background="@color/white"
+                     app:cardCornerRadius="10dp"
+                     app:cardElevation="50dp">
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:paddingBottom="10dp"
+                         android:paddingTop="5dp"
+                         android:orientation="vertical">
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+                             <TextView
+                                 android:layout_width="205dp"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="10dp"
+                                 android:text="Field 7B"
+                                 android:textColor="#000000"
+                                 android:textSize="20dp"
+                                 android:textStyle="bold" />
+                             <TextView
+                                 android:layout_width="100dp"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="80dp"
+                                 android:paddingLeft="5dp"
+                                 android:paddingTop="3dp"
+                                 android:paddingRight="5dp"
+                                 android:paddingBottom="3dp"
+                                 android:gravity="center"
+                                 android:text="13/10/2021"
+                                 android:textColor="#000000"
+                                 android:textSize="16dp"
+                                 android:textStyle="bold" />
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+
+                             <androidx.cardview.widget.CardView
+                                 android:layout_width="180dp"
+                                 android:layout_height="150dp"
+                                 android:layout_margin="10dp">
+                                 <ImageView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:scaleType="centerCrop"
+                                     android:src="@drawable/field1" />
+                             </androidx.cardview.widget.CardView>
+                             <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_marginTop="9dp"
+                                 android:layout_height="wrap_content"
+                                 android:orientation="vertical">
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <ImageView
+                                         android:layout_width="20dp"
+                                         android:layout_height="20dp"
+                                         android:layout_marginLeft= "10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:src="@drawable/multiple_user" />
+                                     <TextView
+                                         android:layout_width="20dp"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="7"
+                                         android:textColor="#000000"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <ImageView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="5dp"
+                                         android:layout_marginTop="5dp"
+                                         android:src="@drawable/outline_location_on_24" />
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="HCMC"
+                                         android:textColor="#000000"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
+
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="5:00 - 17:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="$9"
+                                         android:textColor="#030303"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="17:00 - 23:00"
+                                         android:textColor="#392BD0"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="40dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="-10%"
+                                         android:textColor="#D31C1C"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
+
+                                 <LinearLayout
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal">
+                                     <TextView
+                                         android:id="@+id/tvChildPriceIgnore6"
+                                         android:layout_width="50dp"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="$12"
+                                         android:textColor="#D31C1C"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                     <TextView
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:layout_marginLeft="10dp"
+                                         android:layout_marginTop="5dp"
+                                         android:text="$10.8"
+                                         android:textColor="#030303"
+                                         android:textSize="16dp"
+                                         android:textStyle="bold" />
+                                 </LinearLayout>
+                             </LinearLayout>
+                         </LinearLayout>
+                         <View
+                             android:layout_width="match_parent"
+                             android:layout_height="0.5dp"
+                             android:layout_marginTop="5dp"
+                             android:layout_marginEnd="10dp"
+                             android:layout_marginStart="10dp"
+                             android:background="#000000" />
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+                             <ImageView
+                                 android:layout_width="20dp"
+                                 android:layout_height="20dp"
+                                 android:layout_marginLeft="8dp"
+                                 android:layout_marginTop="5dp"
+                                 android:src="@drawable/star"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_marginTop="5dp"
+                                 android:text="4"
+                                 android:textColor="#000000"
+                                 android:textSize="16dp"
+                                 android:textStyle="bold" />
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="5dp"
+                                 android:paddingRight="15dp"
+                                 android:gravity="right"
+                                 android:text="Slots available: 1"
+                                 android:textColor="#45AB2B"
+                                 android:textSize="16dp"
                                  android:textStyle="bold" />
                          </LinearLayout>
                      </LinearLayout>
