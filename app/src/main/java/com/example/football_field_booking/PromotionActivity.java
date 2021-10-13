@@ -72,4 +72,9 @@ public class PromotionActivity extends AppCompatActivity {
         intent.putExtra("action","add to cart");
         startActivity(intent);
     }
+
+    public void clickToViewDetailABigField(View view) {
+        Intent intent=new Intent(this,ListPromotionActivity.class);
+        startActivity(intent);
+    }
 }
