@@ -4,14 +4,17 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import java.util.Calendar;
 
-public class OwnerFootballFieldDetailActivity extends AppCompatActivity {
+public class UserFootballFieldDetailActivity extends AppCompatActivity {
 
     private TextView txtSelectDate;
     private DatePickerDialog datePickerDialog;
@@ -19,15 +22,18 @@ public class OwnerFootballFieldDetailActivity extends AppCompatActivity {
     private Calendar calendar;
     String now;
 
+    private ToggleButton toggleButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_onwer_football_field_detail);
+        setContentView(R.layout.activity_user_football_field_detail);
 //        Intent intent=this.getIntent();
 //        String fieldID=intent.getStringExtra("fieldID");
         calendar = Calendar.getInstance();
         txtSelectDate = findViewById(R.id.txtSelectDate);
+        toggleButton=findViewById(R.id.tgBtn);
 
         now = calendar.get(Calendar.DAY_OF_MONTH) +
                 "/" + (calendar.get(Calendar.MONTH) + 1) +
@@ -47,7 +53,7 @@ public class OwnerFootballFieldDetailActivity extends AppCompatActivity {
             year = Integer.parseInt(selectedDate[2]);
         }
         System.out.println(day + "/" + month + "/" + year);
-        datePickerDialog = new DatePickerDialog(OwnerFootballFieldDetailActivity.this, new DatePickerDialog.OnDateSetListener() {
+        datePickerDialog = new DatePickerDialog(UserFootballFieldDetailActivity.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int y, int m, int d) {
                 txtSelectDate.setText(d + "/" + (m + 1) + "/" + y);
@@ -55,10 +61,22 @@ public class OwnerFootballFieldDetailActivity extends AppCompatActivity {
         }, year, month, day);
         datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
         datePickerDialog.show();
+
+        toggleButton.setBackgroundColor(ContextCompat.getColor(UserFootballFieldDetailActivity.this, R.color.green));
+        toggleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(toggleButton.isChecked()){
+
+                }else{
+
+                }
+            }
+        });
     }
 
     public void clickToAddToCart(View view) {
-        Intent intent=new Intent(OwnerFootballFieldDetailActivity.this,MainActivity.class);
+        Intent intent=new Intent(UserFootballFieldDetailActivity.this,MainActivity.class);
         startActivity(intent);
     }
 }

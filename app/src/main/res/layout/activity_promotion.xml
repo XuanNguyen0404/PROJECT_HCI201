@@ -154,6 +154,7 @@
                                 android:orientation="horizontal">
 
                                 <RelativeLayout
+                                    android:onClick="clickToViewDetailField"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="left">
@@ -313,6 +314,7 @@
                                         app:cardCornerRadius="20dp">
 
                                         <ImageView
+
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:scaleType="centerCrop"
@@ -703,6 +705,7 @@
                                 android:orientation="horizontal">
 
                                 <RelativeLayout
+                                    android:onClick="clickToViewDetailField"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="left">

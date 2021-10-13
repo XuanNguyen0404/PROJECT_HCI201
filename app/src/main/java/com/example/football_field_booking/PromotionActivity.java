@@ -2,8 +2,10 @@ package com.example.football_field_booking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.MaterialToolbar;
@@ -33,5 +35,11 @@ public class PromotionActivity extends AppCompatActivity {
         topAppBar.setTitle("Promotion");
 
 
+    }
+
+    public void clickToViewDetailField(View view) {
+        Intent intent=new Intent(this, UserFootballFieldDetailActivity.class);
+        intent.putExtra("action","add to cart");
+        startActivity(intent);
     }
 }

@@ -2,32 +2,23 @@ package com.example.football_field_booking;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
-import com.example.football_field_booking.daos.UserDAO;
-import com.example.football_field_booking.dtos.UserDTO;
 import com.example.football_field_booking.fragments.CartFragment;
 import com.example.football_field_booking.fragments.ProfileFragment;
 import com.example.football_field_booking.fragments.TabFragment;
 import com.example.football_field_booking.fragments.UserHomeFragment;
 import com.example.football_field_booking.validations.Validation;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentSnapshot;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment = null;
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.pageHome:
                         selectedFragment = new UserHomeFragment();
                         break;
@@ -95,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Intent intent = this.getIntent();
+        if (intent.getStringExtra("action") != null){
+            if (intent.getStringExtra("action").equals("add to cart")) {
+                Fragment selectedFragment = new CartFragment();
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, selectedFragment).commit();
+            }
+        }
     }
 
 
@@ -125,12 +123,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void clickToViewMorePromotion(View view) {
-        Intent intent=new Intent(MainActivity.this,PromotionActivity.class);
+        Intent intent = new Intent(MainActivity.this, PromotionActivity.class);
         startActivity(intent);
     }
 
     public void clickToViewDetalFootballField(View view) {
-        Intent intent=new Intent(MainActivity.this,OwnerFootballFieldDetailActivity.class);
+        Intent intent = new Intent(MainActivity.this, UserFootballFieldDetailActivity.class);
         startActivity(intent);
     }
 }

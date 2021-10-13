@@ -38,7 +38,7 @@
             android:name=".CreateFootballFieldActivity"
             android:exported="true" />
         <activity
-            android:name=".OwnerFootballFieldDetailActivity"
+            android:name=".UserFootballFieldDetailActivity"
             android:exported="true">
         </activity>
         <activity
