@@ -111,27 +111,6 @@
                 style="@style/MyToggleButton"
                 android:textOff="21h-22h"
                 android:textOn="21h-22h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="17h-18h"
-                android:textOn="17h-18h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="18h-19h"
-                android:textOn="18h-19h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="19h-20h"
-                android:textOn="19h-20h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="21h-22h"
-                android:textOn="21h-22h" />
-
         </GridLayout>
     </LinearLayout>
 

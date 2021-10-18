@@ -2,8 +2,10 @@ package com.example.football_field_booking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class ListPromotionActivity extends AppCompatActivity {
@@ -27,5 +29,10 @@ public class ListPromotionActivity extends AppCompatActivity {
         textIgnore5.setPaintFlags(textIgnore5.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         textIgnore6.setPaintFlags(textIgnore6.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
+    }
+
+    public void clickToViewDetailField(View view) {
+        Intent intent=new Intent(this,UserFootballFieldDetailActivity.class);
+        startActivity(intent);
     }
 }

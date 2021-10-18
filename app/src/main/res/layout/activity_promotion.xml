@@ -99,10 +99,9 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:orientation="horizontal">
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -112,29 +111,28 @@
                                         android:text="Duy Hoang Field"
                                         android:textColor="#000000"
                                         android:textSize="18dp"
+                                        android:gravity="left"
                                         android:textStyle="bold" />
-
-                                    <LinearLayout
+                                    <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-                                        <ImageView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:src="@drawable/outline_location_on_24" />
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Bình Thanh Dist,\nHCMC"
-                                            android:textColor="#000000"
-                                            android:textSize="18dp"/>
-                                    </LinearLayout>
-                                </LinearLayout>
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:background="@drawable/button_instance"
+                                        android:paddingLeft="10dp"
+                                        android:paddingTop="3dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="3dp"
+                                        android:text="2 km"
+                                        android:textColor="#ffffff"
+                                        android:layout_gravity="right"
+                                        android:textSize="18dp" />
+                                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:layout_marginLeft="25dp"
                                     android:background="@drawable/button_instance"
                                     android:paddingLeft="10dp"
                                     android:paddingTop="3dp"
@@ -802,19 +800,40 @@
                                 android:layout_height="100dp"
                                 android:orientation="horizontal">
                                 <LinearLayout
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_marginTop="10dp"
-                                        android:layout_marginBottom="20dp"
-                                        android:text="Anh Thy Field"
-                                        android:textColor="#000000"
-                                        android:textSize="18dp"
-                                        android:textStyle="bold" />
+                                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/txtFieldName"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="20dp"
+                                            android:text="Anh Thy Field"
+                                            android:textColor="#000000"
+                                            android:textSize="18dp"
+                                            android:gravity="left"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:background="@drawable/button_instance"
+                                            android:paddingLeft="10dp"
+                                            android:paddingTop="3dp"
+                                            android:paddingRight="10dp"
+                                            android:paddingBottom="3dp"
+                                            android:layout_below="@+id/txtFieldName"
+                                            android:text="3.5 km"
+                                            android:textColor="#ffffff"
+                                            android:layout_gravity="right"
+                                            android:textSize="18dp" />
+                                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
                                     <LinearLayout
                                         android:layout_width="wrap_content"
@@ -832,19 +851,7 @@
                                             android:textSize="18dp"/>
                                     </LinearLayout>
                                 </LinearLayout>
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_marginLeft="25dp"
-                                    android:background="@drawable/button_instance"
-                                    android:paddingLeft="10dp"
-                                    android:paddingTop="3dp"
-                                    android:paddingRight="10dp"
-                                    android:paddingBottom="3dp"
-                                    android:text="3.5 km"
-                                    android:textColor="#ffffff"
-                                    android:textSize="18dp" />
+
                             </LinearLayout>
                         </LinearLayout>
 
