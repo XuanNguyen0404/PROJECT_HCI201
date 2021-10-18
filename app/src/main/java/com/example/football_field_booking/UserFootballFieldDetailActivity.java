@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -12,6 +13,10 @@ import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.example.football_field_booking.fragments.TimeWorkingFragment;
+import com.example.football_field_booking.fragments.UserHomeFragment;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Calendar;
 
@@ -22,7 +27,7 @@ public class UserFootballFieldDetailActivity extends AppCompatActivity {
     private int year, month, day;
     private Calendar calendar;
     String now;
-
+    private FloatingActionButton btnBack;
     private ToggleButton toggleButton;
 
 
@@ -34,10 +39,14 @@ public class UserFootballFieldDetailActivity extends AppCompatActivity {
 //        String fieldID=intent.getStringExtra("fieldID");
         calendar = Calendar.getInstance();
         txtSelectDate = findViewById(R.id.txtSelectDate);
-        toggleButton=findViewById(R.id.tgBtn);
-        TextView textIgnore1 = findViewById(R.id.txtTextPriceDiscount);
+        btnBack=findViewById(R.id.btnBack);
 
-        textIgnore1.setPaintFlags(textIgnore1.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         now = calendar.get(Calendar.DAY_OF_MONTH) +
                 "/" + (calendar.get(Calendar.MONTH) + 1) +
@@ -47,6 +56,7 @@ public class UserFootballFieldDetailActivity extends AppCompatActivity {
         day = calendar.get(Calendar.DAY_OF_MONTH);
         month = calendar.get(Calendar.MONTH);
         year = calendar.get(Calendar.YEAR);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new TimeWorkingFragment()).commit();
     }
 
     public void clickToChangeDate(View view) {
@@ -66,17 +76,6 @@ public class UserFootballFieldDetailActivity extends AppCompatActivity {
         datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
         datePickerDialog.show();
 
-        toggleButton.setBackgroundColor(ContextCompat.getColor(UserFootballFieldDetailActivity.this, R.color.green));
-        toggleButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(toggleButton.isChecked()){
-
-                }else{
-
-                }
-            }
-        });
     }
 
     public void clickToAddToCart(View view) {
