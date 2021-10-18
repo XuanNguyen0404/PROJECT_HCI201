@@ -16,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.football_field_booking.FilterDialogFragment;
-import com.example.football_field_booking.OwnerFootballFieldDetailActivity;
 import com.example.football_field_booking.R;
 
 import java.util.Calendar;

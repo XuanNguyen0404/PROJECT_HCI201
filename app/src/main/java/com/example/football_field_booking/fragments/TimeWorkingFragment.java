@@ -12,17 +12,18 @@ import android.view.ViewGroup;
 
 import com.example.football_field_booking.R;
 import com.example.football_field_booking.adapters.PageHistoryAdapter;
+import com.example.football_field_booking.adapters.TimeWorkingAdapter;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 
-public class TabFragment extends Fragment {
+public class TimeWorkingFragment extends Fragment {
 
     private TabLayout tabLayout;
     private ViewPager2 viewPager;
     private View view;
 
-    public TabFragment() {
+    public TimeWorkingFragment() {
         // Required empty public constructor
     }
 
@@ -31,27 +32,25 @@ public class TabFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_tab, container, false);
+        view = inflater.inflate(R.layout.fragment_time_working, container, false);
 
-        tabLayout = view.findViewById(R.id.tabBar);
+        tabLayout = view.findViewById(R.id.tblTimeWorking);
         viewPager = view.findViewById(R.id.viewPager);
 
-        PageHistoryAdapter pageHistoryAdapter = new PageHistoryAdapter(this.getActivity());
+        TimeWorkingAdapter timeWorkingAdapter = new TimeWorkingAdapter(this.getActivity());
 
-        viewPager.setAdapter(pageHistoryAdapter);
+        viewPager.setAdapter(timeWorkingAdapter);
 
         new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 if(position ==0){
-                    tab.setText("Past");
+                    tab.setText("30 minutes");
                 }else {
-                    tab.setText("Now");
+                    tab.setText("60 minutes");
                 }
             }
         }).attach();
