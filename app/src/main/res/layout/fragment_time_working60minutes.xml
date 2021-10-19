@@ -59,9 +59,9 @@
                 android:textOn="7h-8h" />
 
             <ToggleButton
-                android:id="@+id/tgBtn"
                 style="@style/MyToggleButton"
                 android:textOff="8h-9h"
+                android:enabled="false"
                 android:textOn="8h-9h" />
 
             <ToggleButton
@@ -73,6 +73,16 @@
                 style="@style/MyToggleButton"
                 android:textOff="10h-11h"
                 android:textOn="10h-11h" />
+
+            <ToggleButton
+                style="@style/MyToggleButton"
+                android:textOff="11h-12h"
+                android:textOn="11h-12h" />
+
+            <ToggleButton
+                style="@style/MyToggleButton"
+                android:textOff="12h-13h"
+                android:textOn="12h-13h" />
         </GridLayout>
 
         <TextView
@@ -109,8 +119,18 @@
 
             <ToggleButton
                 style="@style/MyToggleButton"
+                android:textOff="20h-21h"
+                android:textOn="20h-21h" />
+
+            <ToggleButton
+                style="@style/MyToggleButton"
                 android:textOff="21h-22h"
                 android:textOn="21h-22h" />
+
+            <ToggleButton
+                style="@style/MyToggleButton"
+                android:textOff="22h-23h"
+                android:textOn="22h-23h" />
         </GridLayout>
     </LinearLayout>
 

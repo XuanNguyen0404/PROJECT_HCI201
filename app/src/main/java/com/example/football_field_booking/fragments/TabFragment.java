@@ -45,6 +45,7 @@ public class TabFragment extends Fragment {
 
         viewPager.setAdapter(pageHistoryAdapter);
 
+
         new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {

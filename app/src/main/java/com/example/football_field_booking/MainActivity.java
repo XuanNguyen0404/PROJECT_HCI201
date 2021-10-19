@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -44,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new UserHomeFragment()).commit();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -77,6 +77,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Intent intent = this.getIntent();
+
+        String action = intent.getStringExtra("action");
+        if (action != null) {
+            Log.d("action", action);
+            if (action.equals("add to cart")) {
+                Fragment cartFragment = new CartFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, cartFragment).commit();
+                bottomNavigationView.setSelectedItemId(R.id.page_2);
+            } else if (action.equals("view_history")) {
+                Fragment tabFragment = new TabFragment();
+                bottomNavigationView.setSelectedItemId(R.id.page_3);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, tabFragment).commit();
+            }
+        } else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new UserHomeFragment()).commit();
+
+        }
+
+
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,13 +106,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Intent intent = this.getIntent();
-        if (intent.getStringExtra("action") != null){
-            if (intent.getStringExtra("action").equals("add to cart")) {
-                Fragment selectedFragment = new CartFragment();
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, selectedFragment).commit();
-            }
-        }
+
     }
 
 

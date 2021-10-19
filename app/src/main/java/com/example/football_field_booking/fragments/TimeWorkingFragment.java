@@ -48,9 +48,9 @@ public class TimeWorkingFragment extends Fragment {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 if(position ==0){
-                    tab.setText("30 minutes");
-                }else {
                     tab.setText("60 minutes");
+                }else {
+                    tab.setText("90 minutes");
                 }
             }
         }).attach();

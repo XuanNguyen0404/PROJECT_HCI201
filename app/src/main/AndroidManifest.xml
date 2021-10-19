@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Football_Field_Booking">
         <activity
+            android:name=".BookingSuccessActivity"
+            android:exported="true" />
+        <activity
             android:name=".ListPromotionActivity"
             android:exported="true" />
         <activity
@@ -41,9 +44,8 @@
             android:name=".CreateFootballFieldActivity"
             android:exported="true" />
         <activity
-
             android:name=".UserFootballFieldDetailActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
