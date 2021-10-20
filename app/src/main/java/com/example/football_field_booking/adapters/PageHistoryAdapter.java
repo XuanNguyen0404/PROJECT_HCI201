@@ -33,6 +33,7 @@ public class PageHistoryAdapter extends FragmentStateAdapter {
         }
     }
 
+
     @Override
     public int getItemCount() {
         return 2;

@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TimeWorking30minutesFragment">
+    tools:context=".fragments.TimeWorking90minutesFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -56,47 +56,24 @@
             <ToggleButton
                 style="@style/MyToggleButton"
                 android:enabled="false"
-                android:textOff="7h-7h30"
-                android:textOn="7h-7h30" />
+                android:textOff="7h-8h30"
+                android:textOn="7h-8h30" />
 
             <ToggleButton
                 android:id="@+id/tgBtn"
                 style="@style/MyToggleButton"
-                android:enabled="false"
-                android:textOff="7h30-8h"
-                android:textOn="7h30-8h" />
+                android:textOff="8h30-10h"
+                android:textOn="8h30-10h" />
 
             <ToggleButton
                 style="@style/MyToggleButton"
-                android:textOff="8h-8h30"
-                android:textOn="8h-8h30" />
-
+                android:textOff="10h-11h30"
+                android:textOn="10h-11h30" />
             <ToggleButton
 
                 style="@style/MyToggleButton"
-                android:textOff="8h30-9h"
-                android:textOn="8h30-9h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="9h-9h30"
-                android:textOn="9h-9h30" />
-            <ToggleButton
-
-                style="@style/MyToggleButton"
-                android:textOff="9h30-10h"
-                android:textOn="9h30-10h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="10h-10h30"
-                android:textOn="10h-10h30" />
-
-            <ToggleButton
-
-                style="@style/MyToggleButton"
-                android:textOff="10h30-11h"
-                android:textOn="10h30-11h" />
+                android:textOff="11h30-13h"
+                android:textOn="11h30-13h" />
         </GridLayout>
 
         <TextView
@@ -118,43 +95,23 @@
 
             <ToggleButton
                 style="@style/MyToggleButton"
-                android:textOff="17h-17h30"
-                android:textOn="17h-17h30" />
+                android:textOff="17h-18h30"
+                android:textOn="17h-18h30" />
 
             <ToggleButton
                 style="@style/MyToggleButton"
-                android:textOff="17h30-18h"
-                android:textOn="17h30-18h" />
+                android:textOff="18h30-20h"
+                android:textOn="18h30-20h" />
 
             <ToggleButton
                 style="@style/MyToggleButton"
-                android:textOff="18h-18h30"
-                android:textOn="18h-18h30" />
+                android:textOff="20h-21h30"
+                android:textOn="20h-21h30" />
 
             <ToggleButton
                 style="@style/MyToggleButton"
-                android:textOff="18h30-19h"
-                android:textOn="18h30-19h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="19h-19h30"
-                android:textOn="19h-19h30" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="19h30-20h"
-                android:textOn="19h30-20h" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="20h-20h30"
-                android:textOn="20h-20h30" />
-
-            <ToggleButton
-                style="@style/MyToggleButton"
-                android:textOff="20h30-21h"
-                android:textOn="20h30-21h" />
+                android:textOff="21h30-23h"
+                android:textOn="21h30-23h" />
         </GridLayout>
     </LinearLayout>
 

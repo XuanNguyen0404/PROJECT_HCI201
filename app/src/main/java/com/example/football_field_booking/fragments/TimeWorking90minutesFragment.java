@@ -13,15 +13,15 @@ import android.widget.TextView;
 import com.example.football_field_booking.R;
 
 
-public class TimeWorking30minutesFragment extends Fragment {
+public class TimeWorking90minutesFragment extends Fragment {
 
-    public TimeWorking30minutesFragment() {
+    public TimeWorking90minutesFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_time_working30minutes, container, false);
+        View view=inflater.inflate(R.layout.fragment_time_working90minutes, container, false);
         TextView textIgnore1 = view.findViewById(R.id.txtTextPriceDiscount);
 
         textIgnore1.setPaintFlags(textIgnore1.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);

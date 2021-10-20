@@ -57,8 +57,8 @@
                          android:layout_height="wrap_content"
                          android:paddingBottom="10dp"
                          android:paddingTop="5dp"
-                         android:orientation="vertical">
-                         <LinearLayout
+                         android:orientation="vertical" android:onClick="clickToViewDetailField">
+                         <androidx.coordinatorlayout.widget.CoordinatorLayout
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:orientation="horizontal">
@@ -73,17 +73,18 @@
                              <TextView
                                  android:layout_width="100dp"
                                  android:layout_height="wrap_content"
-                                 android:layout_marginLeft="80dp"
+                                 android:layout_marginRight="5dp"
                                  android:paddingLeft="5dp"
                                  android:paddingTop="3dp"
                                  android:paddingRight="5dp"
                                  android:paddingBottom="3dp"
                                  android:gravity="center"
+                                 android:layout_gravity="right"
                                  android:text="13/10/2021"
                                  android:textColor="#000000"
                                  android:textSize="16dp"
                                  android:textStyle="bold" />
-                         </LinearLayout>
+                         </androidx.coordinatorlayout.widget.CoordinatorLayout>
                          <LinearLayout
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
@@ -297,7 +298,7 @@
                          android:paddingBottom="10dp"
                          android:paddingTop="5dp"
                          android:orientation="vertical">
-                         <LinearLayout
+                         <androidx.coordinatorlayout.widget.CoordinatorLayout
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:orientation="horizontal">
@@ -312,17 +313,18 @@
                              <TextView
                                  android:layout_width="100dp"
                                  android:layout_height="wrap_content"
-                                 android:layout_marginLeft="80dp"
+                                 android:layout_marginRight="5dp"
                                  android:paddingLeft="5dp"
                                  android:paddingTop="3dp"
                                  android:paddingRight="5dp"
                                  android:paddingBottom="3dp"
                                  android:gravity="center"
+                                 android:layout_gravity="right"
                                  android:text="13/10/2021"
                                  android:textColor="#000000"
                                  android:textSize="16dp"
                                  android:textStyle="bold" />
-                         </LinearLayout>
+                         </androidx.coordinatorlayout.widget.CoordinatorLayout>
                          <LinearLayout
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
@@ -535,7 +537,7 @@
                          android:paddingBottom="10dp"
                          android:paddingTop="5dp"
                          android:orientation="vertical">
-                         <LinearLayout
+                         <androidx.coordinatorlayout.widget.CoordinatorLayout
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
                              android:orientation="horizontal">
@@ -550,17 +552,18 @@
                              <TextView
                                  android:layout_width="100dp"
                                  android:layout_height="wrap_content"
-                                 android:layout_marginLeft="80dp"
+                                 android:layout_marginRight="5dp"
                                  android:paddingLeft="5dp"
                                  android:paddingTop="3dp"
                                  android:paddingRight="5dp"
                                  android:paddingBottom="3dp"
                                  android:gravity="center"
+                                 android:layout_gravity="right"
                                  android:text="13/10/2021"
                                  android:textColor="#000000"
                                  android:textSize="16dp"
                                  android:textStyle="bold" />
-                         </LinearLayout>
+                         </androidx.coordinatorlayout.widget.CoordinatorLayout>
                          <LinearLayout
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"

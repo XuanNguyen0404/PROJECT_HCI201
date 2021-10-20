@@ -80,6 +80,7 @@ public class UserFootballFieldDetailActivity extends AppCompatActivity {
 
     public void clickToAddToCart(View view) {
         Intent intent=new Intent(UserFootballFieldDetailActivity.this,MainActivity.class);
+        intent.putExtra("action","add to cart");
         startActivity(intent);
     }
 }

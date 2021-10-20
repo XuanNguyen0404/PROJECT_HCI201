@@ -18,14 +18,17 @@
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/ic_sort_white_24px.xml" value="0.2526041666666667" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/rounded_corner_with_border.xml" value="0.2526041666666667" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/drawable/toggle_selector.xml" value="0.2526041666666667" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_booking_success.xml" value="0.264" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_create_football_field.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_list_promotion.xml" value="0.264" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_login.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_onwer_football_field_detail.xml" value="0.176" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_owner_home.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_promotion.xml" value="0.2" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_user_football_field_detail.xml" value="0.264" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/custom_calendar_day.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/dialog_filters.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_detaill_booking.xml" value="0.2171875" />
@@ -35,6 +38,8 @@
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_time_working30minutes.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_time_working60minutes.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_user_home.xml" value="0.2" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/outline_check_circle_outline_24.xml" value="0.23645833333333333" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2171875" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/menu/top_app_bar.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/abc.xml" value="0.25416666666666665" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/activity_create_football_field.xml" value="0.4" />
