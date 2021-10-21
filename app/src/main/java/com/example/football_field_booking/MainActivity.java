@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -88,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
                 bottomNavigationView.setSelectedItemId(R.id.page_2);
             } else if (action.equals("view_history")) {
                 Fragment tabFragment = new TabFragment();
+                Bundle bundle=new Bundle();
+                bundle.putString("action","view_history");
+                tabFragment.setArguments(bundle);
                 bottomNavigationView.setSelectedItemId(R.id.page_3);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, tabFragment).commit();
             }

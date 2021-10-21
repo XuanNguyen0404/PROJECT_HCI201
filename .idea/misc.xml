@@ -27,11 +27,15 @@
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_owner_home.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_promotion.xml" value="0.2" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_search_by_name.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/activity_user_football_field_detail.xml" value="0.264" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/custom_calendar_day.xml" value="0.23645833333333333" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/delete_dialog.xml" value="0.22239583333333332" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/dialog_filters.xml" value="0.23645833333333333" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_cancel_dialog.xml" value="0.264" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_detaill_booking.xml" value="0.2171875" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_history_now.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_history_past.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_tab.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_time_working.xml" value="0.23645833333333333" />
@@ -40,7 +44,9 @@
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/fragment_user_home.xml" value="0.2" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/layout/outline_check_circle_outline_24.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2171875" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/menu/tap_bar_main.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/menu/top_app_bar.xml" value="0.23645833333333333" />
+        <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_HCI201/app/src/main/res/menu/top_bar.xml" value="0.23645833333333333" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/abc.xml" value="0.25416666666666665" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/activity_create_football_field.xml" value="0.4" />
         <entry key="..\:/FPT-Course/Fall 2021/PRM391(Mobile programing)/PROJECT_PRM391/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />

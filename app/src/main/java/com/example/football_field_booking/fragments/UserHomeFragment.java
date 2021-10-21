@@ -1,6 +1,7 @@
 package com.example.football_field_booking.fragments;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 
@@ -8,15 +9,20 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.football_field_booking.FilterDialogFragment;
+import com.example.football_field_booking.ListPromotionActivity;
 import com.example.football_field_booking.R;
+import com.example.football_field_booking.SearchByNameActivity;
 
 import java.util.Calendar;
 
@@ -42,6 +48,10 @@ public class UserHomeFragment extends Fragment{
 
     private ImageView button_clear_filter;
 
+    private LinearLayout searchByMap,viewDetailBigField;
+
+    private ImageButton imgBtnNearMe;
+
     public UserHomeFragment() {
         // Required empty public constructor
     }
@@ -54,6 +64,9 @@ public class UserHomeFragment extends Fragment{
 
         filter_bar=view.findViewById(R.id.filter_bar);
         button_clear_filter=view.findViewById(R.id.button_clear_filter);
+        searchByMap=view.findViewById(R.id.searchByMap);
+        viewDetailBigField=view.findViewById(R.id.viewDetailBigField);
+        imgBtnNearMe=view.findViewById(R.id.imgBtnNearMe);
         filter_bar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,6 +130,31 @@ public class UserHomeFragment extends Fragment{
             }
         });
 
+        searchByMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(view.getContext(),SearchByNameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imgBtnNearMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(view.getContext(),SearchByNameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        viewDetailBigField.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(view.getContext(), ListPromotionActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
+
 }

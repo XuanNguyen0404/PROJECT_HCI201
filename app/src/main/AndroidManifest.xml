@@ -47,6 +47,9 @@
             android:name=".UserFootballFieldDetailActivity"
             android:exported="true" />
         <activity
+            android:name=".SearchByNameActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
