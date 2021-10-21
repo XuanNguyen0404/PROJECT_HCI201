@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,22 +41,33 @@ public class TabFragment extends Fragment {
 
         tabLayout = view.findViewById(R.id.tabBar);
         viewPager = view.findViewById(R.id.viewPager);
+        try {
+            PageHistoryAdapter pageHistoryAdapter = new PageHistoryAdapter(this.getActivity());
 
-        PageHistoryAdapter pageHistoryAdapter = new PageHistoryAdapter(this.getActivity());
-
-        viewPager.setAdapter(pageHistoryAdapter);
-
-
-        new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
-            @Override
-            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-                if(position ==0){
-                    tab.setText("Past");
-                }else {
-                    tab.setText("Now");
+            viewPager.setAdapter(pageHistoryAdapter);
+            Bundle bundle = getArguments();
+            if(bundle!=null){
+                String action = bundle.getString("action");
+                Log.d("Bundle", action);
+                if (action!=null && action.equals("view_history")) {
+                    viewPager.setCurrentItem(1,true);
                 }
             }
-        }).attach();
+            new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
+                @Override
+                public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                    if (position == 0) {
+                        tab.setText("Past");
+                    } else {
+                        tab.setText("Now");
+                    }
+                }
+            }).attach();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
         return view;
     }

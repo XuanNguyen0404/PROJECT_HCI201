@@ -29,7 +29,7 @@ public class PageHistoryAdapter extends FragmentStateAdapter {
             case 1:
                 return new HistoryNowFragment();
             default:
-                return new HistoryPastFragment();
+                return new HistoryNowFragment();
         }
     }
 

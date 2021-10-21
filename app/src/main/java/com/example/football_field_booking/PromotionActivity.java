@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.MaterialToolbar;
@@ -22,6 +24,7 @@ public class PromotionActivity extends AppCompatActivity {
     private TextView tvViewMore1;
     private TextView tvViewMore2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +39,6 @@ public class PromotionActivity extends AppCompatActivity {
 
         tvViewMore1 = findViewById(R.id.tvViewMore1);
 //        tvViewMore2 = findViewById(R.id.tvViewMore2);
-
 
         textIgnore1.setPaintFlags(textIgnore1.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         textIgnore2.setPaintFlags(textIgnore2.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
@@ -53,18 +55,8 @@ public class PromotionActivity extends AppCompatActivity {
             }
         });
 
-//        tvViewMore2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(PromotionActivity.this, ListPromotionActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-
         topAppBar=findViewById(R.id.topAppBar);
         topAppBar.setTitle("Promotion");
-
-
     }
 
     public void clickToViewDetailField(View view) {
